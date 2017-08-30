@@ -38,7 +38,7 @@
     <link rel="alternate" type="application/rss+xml" title="hello, wupeng" href="/atom.xml">
     
 
-    <link rel="canonical" href="http://yoursite.com"/>
+    <link rel="canonical" href="http://yoursite.com/category.html"/>
 
                  
 </head>
@@ -133,67 +133,47 @@
 
     <div class="content-wrapper">
         <div class="content-wrapper__inner">
-            <div class="main-post-list">
-    
-  <ol class="post-list">
+            <article class="post-container post-container--single">
+
+  <header class="post-header">
+    <h1 class="post-title"></h1>
+  </header>
+
+  <section class="post">
+    <section class="post">
+  <h2><a href="/categories/深入理解/index.html">深入理解系列</a></h2>
+  <br>
+  <h2><a href="/categories/源码解析/index.html">源码解析系列</a></h2>
+  <br>
+  <h2><a href="/categories/译/index.html">译</a></h2>
+  <br>
+</section>
+  </section>
+</article>
+
+<!-- 评论 -->
+
+<section class="post-comments">
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+      var disqus_shortname = 'hellowupeng'; 
+      
+  var disqus_identifier = '/category.html';
+  var disqus_title = '';
+  var disqus_url = 'http://yoursite.com/category.html';
   
-    
-    <li>
-      <h2 class="post-list__post-title post-title"><a href="/2017/08/30/hello-world.1/" title="link to post.title">深入理解 iOS 多线程编程</a></h2>
-      <p class="excerpt">
-    
-      Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick
-    &hellip;
-      </p>
-      <div class="post-list__meta"><!-- 日期 -->
-<time datetime="2017-08-30T08:51:44.062Z" class="post-list__meta--date date">2017-08-30</time> &#8226; <span class="post-list__meta--tags tags"><!-- Tags -->
 
-  <a class="tag-link" href="/tags/iOS/">iOS</a>
-</span><a class="btn-border-small" href="/2017/08/30/hello-world.1/">继续阅读</a></div>
-      <hr class="post-list__divider" />
-    </li>
-  
-    
-    <li>
-      <h2 class="post-list__post-title post-title"><a href="/2017/08/30/hello-world/" title="link to post.title">Hello World</a></h2>
-      <p class="excerpt">
-    
-      Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick
-    &hellip;
-      </p>
-      <div class="post-list__meta"><!-- 日期 -->
-<time datetime="2017-08-30T04:50:46.208Z" class="post-list__meta--date date">2017-08-30</time> &#8226; <span class="post-list__meta--tags tags"><!-- Tags -->
-
-  <a class="tag-link" href="/tags/测试/">测试</a>
-</span><a class="btn-border-small" href="/2017/08/30/hello-world/">继续阅读</a></div>
-      <hr class="post-list__divider" />
-    </li>
-  
-    
-  </ol>
-
-
- <script type="text/x-mathjax-config">
-    MathJax.Hub.Config({"HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"], linebreaks: { automatic:true }, EqnChunk: (MathJax.Hub.Browser.isMobile ? 10 : 50) },
-        tex2jax: { inlineMath: [ ["$", "$"], ["\\(","\\)"] ], processEscapes: true, ignoreClass: "tex2jax_ignore|dno",skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']},
-        TeX: {  noUndefined: { attributes: { mathcolor: "red", mathbackground: "#FFEEEE", mathsize: "90%" } }, Macros: { href: "{}" } },
-        messageStyle: "none"
-    }); 
-    
-</script>
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax(), i;
-        for(i=0; i < all.length; i += 1) {
-            all[i].SourceElement().parentNode.className += ' has-jax';
-        }
-    });
-</script>
-<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
-</div>
+      /* * * DON'T EDIT BELOW THIS LINE * * */
+      (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          //dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+          dsq.src = 'https://a.disquscdn.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  <a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
 
 
             <!-- 底部 -->
