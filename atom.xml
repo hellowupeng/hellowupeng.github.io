@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-08-30T09:16:54.361Z</updated>
+  <updated>2017-09-23T12:28:16.730Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,92 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title></title>
+    <link href="http://yoursite.com/2017/09/22/2017-09/The-Basics/"/>
+    <id>http://yoursite.com/2017/09/22/2017-09/The-Basics/</id>
+    <published>2017-09-22T13:27:29.423Z</published>
+    <updated>2017-09-23T12:28:16.730Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="基础（The-Basics）"><a href="#基础（The-Basics）" class="headerlink" title="基础（The Basics）"></a>基础（The Basics）</h1><p>Swift 是一种用于iOS，macOS，watchOS 和 tvOS 应用开发的新语言。尽管如此，Swift 的许多部分会和你使用 C 和 Objective-C 的开发体验面熟。</p>
+<p>Swift 为所有基础的 C 和 Objective-C 类型提供了自己的版本，包括对于整型的 <code>Int</code>，对于浮点值的 <code>Double</code> 和 <code>Float</code>，对于布尔值的 <code>Bool</code> 和 对于文本数据的 <code>String</code>。Swift 也提供了三种主要集合类型，<code>Array</code> 、 <code>Set</code> 和 <code>Dictionary</code>，在集合类型（Collection Types）里有描述。</p>
+<p>像 C 一样，Swift 使用变量来存储并通过一个标识名来引用值。Swift 也广泛使用值不能改变的变量。也就是大家所熟知的常量，比 C 里面的常量更加强大。在整个 Swift 中，当你使用不需要改变的值的时候，常量被用来让代码更加安全和清晰。</p>
+<p>除了熟悉的类型以外，Swift 还介绍了在 Objective-C 里面没有的高级类型，例如元组（tuples）。元组使你能够创建并传递一组值。你可以使用元组作为一个单一的复合值从一个函数返回多个值。</p>
+<p>Swift 也介绍了处理值缺失的可选型。可选型表示要么“这里有值，它等于x”，要么“这里根本没有值”。使用可选型类似于在 Objective-C 里对于指针使用 <code>nil</code> ，但是它们适用于任何类型，不仅仅是类。可选型不仅比 Objective-C 里的 nil 指针更安全和更具表达性，而且它们还是 Swift 的许多强大特性的核心。</p>
+<p>Swift 是一种类型安全的语言，这意味着语言帮助你让你的代码的值类型清晰。如果你的部分代码需要一个 <code>String</code> ，类型安全阻止你错误地传入一个 <code>Int</code> 。同样地，类型安全阻止你意外地传入一个可选型（optional）<code>String</code> 到需要非可选型（nonoptional）<code>String</code> 的一段代码。类型安全帮助你在开发过程中尽可能早地捕获并解决错误。</p>
+<h2 id="常量和变量（Constants-and-Variable）"><a href="#常量和变量（Constants-and-Variable）" class="headerlink" title="常量和变量（Constants and Variable）"></a>常量和变量（Constants and Variable）</h2><p>常量和变量把一个名称（例如 <code>maximumNumberOfLoginAttempts</code> 或 <code>welcomeMessage</code>）和一个特定类型的值（例如数字 <code>10</code> 或字符串 <code>&quot;Hello&quot;</code> ）联系起来。常量的值一旦设置就不能改变，而变量在将来可以被设置不同的值。</p>
+<h3 id="声明常量和变量（Declaring-Constants-and-Variables）"><a href="#声明常量和变量（Declaring-Constants-and-Variables）" class="headerlink" title="声明常量和变量（Declaring Constants and Variables）"></a>声明常量和变量（Declaring Constants and Variables）</h3><h3 id="类型注解（Type-Annotation）"><a href="#类型注解（Type-Annotation）" class="headerlink" title="类型注解（Type Annotation）"></a>类型注解（Type Annotation）</h3><h3 id="命名常量和变量（Naming-Constants-and-Variables）"><a href="#命名常量和变量（Naming-Constants-and-Variables）" class="headerlink" title="命名常量和变量（Naming Constants and Variables）"></a>命名常量和变量（Naming Constants and Variables）</h3><h3 id="打印常量和变量（Printing-Constants-and-Variables）"><a href="#打印常量和变量（Printing-Constants-and-Variables）" class="headerlink" title="打印常量和变量（Printing Constants and Variables）"></a>打印常量和变量（Printing Constants and Variables）</h3><h2 id="注释（Comments）"><a href="#注释（Comments）" class="headerlink" title="注释（Comments）"></a>注释（Comments）</h2><h2 id="分号（Semicolons）"><a href="#分号（Semicolons）" class="headerlink" title="分号（Semicolons）"></a>分号（Semicolons）</h2><h2 id="整型（Integers）"><a href="#整型（Integers）" class="headerlink" title="整型（Integers）"></a>整型（Integers）</h2><h3 id="整型边界（Integer-）"><a href="#整型边界（Integer-）" class="headerlink" title="整型边界（Integer ）"></a>整型边界（Integer ）</h3><h3 id="Int"><a href="#Int" class="headerlink" title="Int"></a>Int</h3><h3 id="UInt"><a href="#UInt" class="headerlink" title="UInt"></a>UInt</h3><h2 id="浮点值（Floating-Point-Numbers）"><a href="#浮点值（Floating-Point-Numbers）" class="headerlink" title="浮点值（Floating-Point Numbers）"></a>浮点值（Floating-Point Numbers）</h2><h2 id="类型安全和类型引用（Type-Safety-and-Type-Inference）"><a href="#类型安全和类型引用（Type-Safety-and-Type-Inference）" class="headerlink" title="类型安全和类型引用（Type Safety and Type Inference）"></a>类型安全和类型引用（Type Safety and Type Inference）</h2><h2 id="数值字面量（Numeric-Literals）"><a href="#数值字面量（Numeric-Literals）" class="headerlink" title="数值字面量（Numeric Literals）"></a>数值字面量（Numeric Literals）</h2><h2 id="数值类型转换（Numeric-Type-Conversion）"><a href="#数值类型转换（Numeric-Type-Conversion）" class="headerlink" title="数值类型转换（Numeric Type Conversion）"></a>数值类型转换（Numeric Type Conversion）</h2><h3 id="整型转换（Integer-Conversion）"><a href="#整型转换（Integer-Conversion）" class="headerlink" title="整型转换（Integer Conversion）"></a>整型转换（Integer Conversion）</h3><h3 id="整型和浮点型转换（Integer-and-Floating-Point-Conversion）"><a href="#整型和浮点型转换（Integer-and-Floating-Point-Conversion）" class="headerlink" title="整型和浮点型转换（Integer and Floating-Point Conversion）"></a>整型和浮点型转换（Integer and Floating-Point Conversion）</h3><h2 id="类型别名（Type-Aliases）"><a href="#类型别名（Type-Aliases）" class="headerlink" title="类型别名（Type Aliases）"></a>类型别名（Type Aliases）</h2><h2 id="布尔型（Booleans）"><a href="#布尔型（Booleans）" class="headerlink" title="布尔型（Booleans）"></a>布尔型（Booleans）</h2><h2 id="元组（Tuples）"><a href="#元组（Tuples）" class="headerlink" title="元组（Tuples）"></a>元组（Tuples）</h2><h2 id="可选型（Optionals）"><a href="#可选型（Optionals）" class="headerlink" title="可选型（Optionals）"></a>可选型（Optionals）</h2><h2 id="nil"><a href="#nil" class="headerlink" title="nil"></a>nil</h2><h2 id="If-语句和强制解包（If-Statements-and-Forced-Unwrapping）"><a href="#If-语句和强制解包（If-Statements-and-Forced-Unwrapping）" class="headerlink" title="If 语句和强制解包（If Statements and Forced Unwrapping）"></a>If 语句和强制解包（If Statements and Forced Unwrapping）</h2><h2 id="可选绑定（Optional-Binding）"><a href="#可选绑定（Optional-Binding）" class="headerlink" title="可选绑定（Optional Binding）"></a>可选绑定（Optional Binding）</h2><h2 id="隐式可选型解包（Implicitly-Unwrapped-Optional）"><a href="#隐式可选型解包（Implicitly-Unwrapped-Optional）" class="headerlink" title="隐式可选型解包（Implicitly Unwrapped Optional）"></a>隐式可选型解包（Implicitly Unwrapped Optional）</h2><h2 id="错误处理（Error-Handling）"><a href="#错误处理（Error-Handling）" class="headerlink" title="错误处理（Error Handling）"></a>错误处理（Error Handling）</h2>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;基础（The-Basics）&quot;&gt;&lt;a href=&quot;#基础（The-Basics）&quot; class=&quot;headerlink&quot; title=&quot;基础（The Basics）&quot;&gt;&lt;/a&gt;基础（The Basics）&lt;/h1&gt;&lt;p&gt;Swift 是一种用于iOS，macOS，w
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>UIKit</title>
+    <link href="http://yoursite.com/2017/09/22/2017-09/UIkit/"/>
+    <id>http://yoursite.com/2017/09/22/2017-09/UIkit/</id>
+    <published>2017-09-22T13:27:11.102Z</published>
+    <updated>2017-09-23T13:16:58.676Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="UIKit"><a href="#UIKit" class="headerlink" title="UIKit"></a>UIKit</h1><p><a href="https://developer.apple.com/documentation/uikit" target="_blank" rel="external">原文地址</a></p>
+<p>为你的 iOS 或 tvOS 应用构建并管理一个图形的、事件驱动的用户界面。</p>
+<h2 id="概览（Overview）"><a href="#概览（Overview）" class="headerlink" title="概览（Overview）"></a>概览（Overview）</h2><p>UIKit 框架为你的 iOS 和 tvOS 应用提供必需的基础实施。它提供了实现你的界面的窗口（window）和视图（view）基础设施，传递多点触控（Multitouch）和其他输入类型到你应用的事件处理基础设施和需要在用户之间管理交互的主运行循环（main run loop）。由框架提供的其他功能包括动画支持，文档支持，绘制和输出支持，关于当前设备信息，文本管理和显示，搜索支持，无障碍功能支持，应用拓展支持和资源管理。</p>
+<blockquote>
+<h5 id="重要"><a href="#重要" class="headerlink" title="重要"></a>重要</h5><p>除非另外说明，只在你的应用的主线程（main thread）或主调度队列（main dispatch queue）使用 UIKit 类。这个限制特别应用于起源自 UIResponder 或涉及以任何方式操作你的应用的用户界面的类。</p>
+</blockquote>
+<h2 id="主题（Topics）"><a href="#主题（Topics）" class="headerlink" title="主题（Topics）"></a>主题（Topics）</h2><h3 id="应用结构（App-Structure）"><a href="#应用结构（App-Structure）" class="headerlink" title="应用结构（App Structure）"></a>应用结构（App Structure）</h3><p>UIKit 管理你的应用和系统的交互并为你提供类来管理你的应用的数据和资源。</p>
+<h5 id="核心应用（Core-App）"><a href="#核心应用（Core-App）" class="headerlink" title="核心应用（Core App）"></a><a href="">核心应用（Core App）</a></h5><p>管理你的应用的数据模型以及他和系统的交互。</p>
+<h5 id="资源管理（Resource-Management）"><a href="#资源管理（Resource-Management）" class="headerlink" title="资源管理（Resource Management）"></a><a href="">资源管理（Resource Management）</a></h5><p>管理你在你的主要的可执行文件外存储的图片、字符串、storyboards 和 nib 文件。</p>
+<h5 id="应用拓展（App-Extensions）"><a href="#应用拓展（App-Extensions）" class="headerlink" title="应用拓展（App Extensions）"></a><a href="">应用拓展（App Extensions）</a></h5><p>拓展你的应用的基础功能到系统的其他部分。</p>
+<h3 id="用户界面（User-Interface）"><a href="#用户界面（User-Interface）" class="headerlink" title="用户界面（User Interface）"></a>用户界面（User Interface）</h3><p>视图（Views）帮助你在屏幕上显示内容和促进用户交互；视图控制器（view controllers）帮助你管理视图（views）和界面结构。</p>
+<h5 id="视图和控件（Views-and-Controls）"><a href="#视图和控件（Views-and-Controls）" class="headerlink" title="视图和控件（Views and Controls）"></a><a href="">视图和控件（Views and Controls）</a></h5><p>在屏幕上呈现内容和定义该内容所允许的交互。</p>
+<h5 id="视图管理（View-Management）"><a href="#视图管理（View-Management）" class="headerlink" title="视图管理（View Management）"></a><a href="">视图管理（View Management）</a></h5><p>使用视图控制器管理你的界面和促进在不同内容的屏幕之间的导航。</p>
+<h5 id="系统视图控制器（System-View-Controller）"><a href="#系统视图控制器（System-View-Controller）" class="headerlink" title="系统视图控制器（System View Controller）"></a><a href="">系统视图控制器（System View Controller）</a></h5><p>使用内置的 UIKit 视图控制器来选择图片，编辑视频，分享内容，打印文件等。</p>
+<h5 id="拖放（Drag-and-Drop）"><a href="#拖放（Drag-and-Drop）" class="headerlink" title="拖放（Drag and Drop）"></a><a href="">拖放（Drag and Drop）</a></h5><p>通过与你的视图（views）一起使用交互 API 把拖放功能带到你的应用。</p>
+<h5 id="无障碍（Accessibility）"><a href="#无障碍（Accessibility）" class="headerlink" title="无障碍（Accessibility）"></a><a href="">无障碍（Accessibility）</a></h5><p>使你的应用对于残疾用户更友好。</p>
+<h5 id="动画与触觉（Animation-and-Haptics）"><a href="#动画与触觉（Animation-and-Haptics）" class="headerlink" title="动画与触觉（Animation and Haptics）"></a><a href="">动画与触觉（Animation and Haptics）</a></h5><p>使用基于视图的动画和触觉向用户提供反馈。</p>
+<h5 id="窗口与屏幕（Windows-and-Screens）"><a href="#窗口与屏幕（Windows-and-Screens）" class="headerlink" title="窗口与屏幕（Windows and Screens）"></a><a href="">窗口与屏幕（Windows and Screens）</a></h5><p>为你的视图层级和其他内容提供一个容器。</p>
+<h3 id="事件处理（Event-Handling）"><a href="#事件处理（Event-Handling）" class="headerlink" title="事件处理（Event Handling）"></a>事件处理（Event Handling）</h3><p>响应器和手势识别器帮助你处理多点触控，按钮点击，3D Touch事件，键盘输入，自定义输入和自定义动作。</p>
+<h5 id="理解事件处理，响应器和响应器链（Understanding-Event-Handling，-Responders，and-the-Responder-Chain）"><a href="#理解事件处理，响应器和响应器链（Understanding-Event-Handling，-Responders，and-the-Responder-Chain）" class="headerlink" title="理解事件处理，响应器和响应器链（Understanding Event Handling， Responders，and the Responder Chain）"></a><a href="">理解事件处理，响应器和响应器链（Understanding Event Handling， Responders，and the Responder Chain）</a></h5><p>学习事件是如何被传送到你的应用和你如何处理它们。</p>
+<h5 id="触摸，按压和手势（Touches，Presses，and-Gestures）"><a href="#触摸，按压和手势（Touches，Presses，and-Gestures）" class="headerlink" title="触摸，按压和手势（Touches，Presses，and Gestures）"></a><a href="">触摸，按压和手势（Touches，Presses，and Gestures）</a></h5><p>在手势识别器里封装你的应用的事件处理逻辑，以便你能在整个应用里重用这部分代码。</p>
+<h5 id="Peek-and-Pop"><a href="#Peek-and-Pop" class="headerlink" title="Peek and Pop"></a><a href="">Peek and Pop</a></h5><p>使用 3D Touch 输入为你的内容显示自定义预览和动作。</p>
+<h5 id="键盘和菜单（Keyboard-and-Menus）"><a href="#键盘和菜单（Keyboard-and-Menus）" class="headerlink" title="键盘和菜单（Keyboard and Menus）"></a><a href="">键盘和菜单（Keyboard and Menus）</a></h5><p>处理键盘输入并显示一个自定义动作菜单。</p>
+<h3 id="图形，绘制和输出（Graphics，Drawing，and-Printing）"><a href="#图形，绘制和输出（Graphics，Drawing，and-Printing）" class="headerlink" title="图形，绘制和输出（Graphics，Drawing，and Printing）"></a>图形，绘制和输出（Graphics，Drawing，and Printing）</h3><p>UIKit 提供类和协议帮助你配置你的绘制环境和渲染内容。</p>
+<h5 id="图片和-PDF（Images-and-PDF）"><a href="#图片和-PDF（Images-and-PDF）" class="headerlink" title="图片和 PDF（Images and PDF）"></a><a href="">图片和 PDF（Images and PDF）</a></h5><p>创建并管理图片，包括哪些使用位图（bitmap）和 PDF 格式的图片。</p>
+<h5 id="绘制（Drawing）"><a href="#绘制（Drawing）" class="headerlink" title="绘制（Drawing）"></a><a href="">绘制（Drawing）</a></h5><p>使用渲染器，绘制路径，线，阴影来配置你的应用的绘制环境。</p>
+<h5 id="打印（Printing）"><a href="#打印（Printing）" class="headerlink" title="打印（Printing）"></a><a href="">打印（Printing）</a></h5><p>显示系统打印面板和管理过程。</p>
+<h3 id="文本（Text）"><a href="#文本（Text）" class="headerlink" title="文本（Text）"></a>文本（Text）</h3><p>除了在你的应用里易于显示文本的文本视图（text views）外，UIKit 提供了支持系统键盘的自定义文本管理和渲染。</p>
+<h5 id="文本显示和字体（Text-Display-and-Fonts）"><a href="#文本显示和字体（Text-Display-and-Fonts）" class="headerlink" title="文本显示和字体（Text Display and Fonts）"></a><a href="">文本显示和字体（Text Display and Fonts）</a></h5><p>使用 UIKit 视图显示文本，管理字体和检查拼写。</p>
+<h5 id="文本存储（Text-Storage）"><a href="#文本存储（Text-Storage）" class="headerlink" title="文本存储（Text Storage）"></a><a href="">文本存储（Text Storage）</a></h5><p>管理文本存储和协调文本的布局。</p>
+<h5 id="键盘和输入（Keyboards-and-Input）"><a href="#键盘和输入（Keyboards-and-Input）" class="headerlink" title="键盘和输入（Keyboards and Input）"></a><a href="">键盘和输入（Keyboards and Input）</a></h5><p>配置系统键盘或创建你自己的键盘并自己处理输入。</p>
+<h3 id="弃用（Deprecated）"><a href="#弃用（Deprecated）" class="headerlink" title="弃用（Deprecated）"></a>弃用（Deprecated）</h3><p>避免在你的应用里使用弃用的类和协议。</p>
+<h5 id="弃用的符号（Deprecated-Symbols）"><a href="#弃用的符号（Deprecated-Symbols）" class="headerlink" title="弃用的符号（Deprecated Symbols）"></a><a href="">弃用的符号（Deprecated Symbols）</a></h5><h3 id="结构体（Structures）"><a href="#结构体（Structures）" class="headerlink" title="结构体（Structures）"></a>结构体（Structures）</h3><p><code>struct</code>  <a href="">UIDocumentBrowserError</a></p>
+<p>一个包含关于文档浏览错误信息的结构体。</p>
+<h3 id="类（Classes）"><a href="#类（Classes）" class="headerlink" title="类（Classes）"></a>类（Classes）</h3><p><code>class</code>  <a href="">UICollectionViewDropPlaceholder</a></p>
+<p><code>class</code> <a href="">UICollectionViewPlaceholder</a></p>
+<p><code>class</code> <a href="">UITableViewDropPlaceholder</a></p>
+<p><code>class</code> <a href="">UITableViewPlaceholder</a></p>
+<h3 id="协议（Protocols）"><a href="#协议（Protocols）" class="headerlink" title="协议（Protocols）"></a>协议（Protocols）</h3><p><code>protocol</code> <a href="">UIItemProviderPresentationSizeProviding</a></p>
+<h3 id="参考（Reference）"><a href="#参考（Reference）" class="headerlink" title="参考（Reference）"></a>参考（Reference）</h3><h5 id="UIKit-Enumerations"><a href="#UIKit-Enumerations" class="headerlink" title="UIKit Enumerations"></a><a href="">UIKit Enumerations</a></h5>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;UIKit&quot;&gt;&lt;a href=&quot;#UIKit&quot; class=&quot;headerlink&quot; title=&quot;UIKit&quot;&gt;&lt;/a&gt;UIKit&lt;/h1&gt;&lt;p&gt;&lt;a href=&quot;https://developer.apple.com/documentation/uikit&quot; 
+    
+    </summary>
+    
+      <category term="深入理解" scheme="http://yoursite.com/categories/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3/"/>
+    
+    
+      <category term="iOS" scheme="http://yoursite.com/tags/iOS/"/>
+    
+  </entry>
   
   <entry>
     <title>ReactNative原理（译）</title>
