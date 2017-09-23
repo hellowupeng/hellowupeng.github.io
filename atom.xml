@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-09-23T12:28:16.730Z</updated>
+  <updated>2017-09-23T13:31:24.965Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -16,13 +16,13 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title></title>
+    <title>The Basics</title>
     <link href="http://yoursite.com/2017/09/22/2017-09/The-Basics/"/>
     <id>http://yoursite.com/2017/09/22/2017-09/The-Basics/</id>
     <published>2017-09-22T13:27:29.423Z</published>
-    <updated>2017-09-23T12:28:16.730Z</updated>
+    <updated>2017-09-23T13:31:24.965Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="基础（The-Basics）"><a href="#基础（The-Basics）" class="headerlink" title="基础（The Basics）"></a>基础（The Basics）</h1><p>Swift 是一种用于iOS，macOS，watchOS 和 tvOS 应用开发的新语言。尽管如此，Swift 的许多部分会和你使用 C 和 Objective-C 的开发体验面熟。</p>
+    <content type="html"><![CDATA[<p>Swift 是一种用于iOS，macOS，watchOS 和 tvOS 应用开发的新语言。尽管如此，Swift 的许多部分会和你使用 C 和 Objective-C 的开发体验面熟。</p>
 <p>Swift 为所有基础的 C 和 Objective-C 类型提供了自己的版本，包括对于整型的 <code>Int</code>，对于浮点值的 <code>Double</code> 和 <code>Float</code>，对于布尔值的 <code>Bool</code> 和 对于文本数据的 <code>String</code>。Swift 也提供了三种主要集合类型，<code>Array</code> 、 <code>Set</code> 和 <code>Dictionary</code>，在集合类型（Collection Types）里有描述。</p>
 <p>像 C 一样，Swift 使用变量来存储并通过一个标识名来引用值。Swift 也广泛使用值不能改变的变量。也就是大家所熟知的常量，比 C 里面的常量更加强大。在整个 Swift 中，当你使用不需要改变的值的时候，常量被用来让代码更加安全和清晰。</p>
 <p>除了熟悉的类型以外，Swift 还介绍了在 Objective-C 里面没有的高级类型，例如元组（tuples）。元组使你能够创建并传递一组值。你可以使用元组作为一个单一的复合值从一个函数返回多个值。</p>
@@ -33,10 +33,15 @@
     
     <summary type="html">
     
-      &lt;h1 id=&quot;基础（The-Basics）&quot;&gt;&lt;a href=&quot;#基础（The-Basics）&quot; class=&quot;headerlink&quot; title=&quot;基础（The Basics）&quot;&gt;&lt;/a&gt;基础（The Basics）&lt;/h1&gt;&lt;p&gt;Swift 是一种用于iOS，macOS，w
+      &lt;p&gt;Swift 是一种用于iOS，macOS，watchOS 和 tvOS 应用开发的新语言。尽管如此，Swift 的许多部分会和你使用 C 和 Objective-C 的开发体验面熟。&lt;/p&gt;
+&lt;p&gt;Swift 为所有基础的 C 和 Objective-C 类型提供了自己的版
     
     </summary>
     
+      <category term="Swift" scheme="http://yoursite.com/categories/Swift/"/>
+    
+    
+      <category term="iOS" scheme="http://yoursite.com/tags/iOS/"/>
     
   </entry>
   
@@ -45,9 +50,9 @@
     <link href="http://yoursite.com/2017/09/22/2017-09/UIkit/"/>
     <id>http://yoursite.com/2017/09/22/2017-09/UIkit/</id>
     <published>2017-09-22T13:27:11.102Z</published>
-    <updated>2017-09-23T13:16:58.676Z</updated>
+    <updated>2017-09-23T13:31:31.064Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="UIKit"><a href="#UIKit" class="headerlink" title="UIKit"></a>UIKit</h1><p><a href="https://developer.apple.com/documentation/uikit" target="_blank" rel="external">原文地址</a></p>
+    <content type="html"><![CDATA[<p><a href="https://developer.apple.com/documentation/uikit" target="_blank" rel="external">原文地址</a></p>
 <p>为你的 iOS 或 tvOS 应用构建并管理一个图形的、事件驱动的用户界面。</p>
 <h2 id="概览（Overview）"><a href="#概览（Overview）" class="headerlink" title="概览（Overview）"></a>概览（Overview）</h2><p>UIKit 框架为你的 iOS 和 tvOS 应用提供必需的基础实施。它提供了实现你的界面的窗口（window）和视图（view）基础设施，传递多点触控（Multitouch）和其他输入类型到你应用的事件处理基础设施和需要在用户之间管理交互的主运行循环（main run loop）。由框架提供的其他功能包括动画支持，文档支持，绘制和输出支持，关于当前设备信息，文本管理和显示，搜索支持，无障碍功能支持，应用拓展支持和资源管理。</p>
 <blockquote>
@@ -90,138 +95,15 @@
     
     <summary type="html">
     
-      &lt;h1 id=&quot;UIKit&quot;&gt;&lt;a href=&quot;#UIKit&quot; class=&quot;headerlink&quot; title=&quot;UIKit&quot;&gt;&lt;/a&gt;UIKit&lt;/h1&gt;&lt;p&gt;&lt;a href=&quot;https://developer.apple.com/documentation/uikit&quot; 
+      &lt;p&gt;&lt;a href=&quot;https://developer.apple.com/documentation/uikit&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;原文地址&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;为你的 iOS 或 tvOS 应用构建并管理一个图形的、事件驱动
     
     </summary>
     
-      <category term="深入理解" scheme="http://yoursite.com/categories/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3/"/>
+      <category term="Apple文档" scheme="http://yoursite.com/categories/Apple%E6%96%87%E6%A1%A3/"/>
     
     
       <category term="iOS" scheme="http://yoursite.com/tags/iOS/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>ReactNative原理（译）</title>
-    <link href="http://yoursite.com/2017/08/30/hello-world.3/"/>
-    <id>http://yoursite.com/2017/08/30/hello-world.3/</id>
-    <published>2017-08-30T08:52:14.800Z</published>
-    <updated>2017-08-30T09:16:54.361Z</updated>
-    
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
-    
-    </summary>
-    
-      <category term="译" scheme="http://yoursite.com/categories/%E8%AF%91/"/>
-    
-    
-      <category term="React Native" scheme="http://yoursite.com/tags/React-Native/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Android RecyclerView 源码解析</title>
-    <link href="http://yoursite.com/2017/08/30/hello-world.2/"/>
-    <id>http://yoursite.com/2017/08/30/hello-world.2/</id>
-    <published>2017-08-30T08:51:50.445Z</published>
-    <updated>2017-08-30T09:17:03.266Z</updated>
-    
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
-    
-    </summary>
-    
-      <category term="源码解析" scheme="http://yoursite.com/categories/%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90/"/>
-    
-    
-      <category term="Android" scheme="http://yoursite.com/tags/Android/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>深入理解 iOS 多线程编程</title>
-    <link href="http://yoursite.com/2017/08/30/hello-world.1/"/>
-    <id>http://yoursite.com/2017/08/30/hello-world.1/</id>
-    <published>2017-08-30T08:51:44.062Z</published>
-    <updated>2017-08-30T12:36:34.675Z</updated>
-    
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
-    
-    </summary>
-    
-      <category term="深入理解" scheme="http://yoursite.com/categories/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3/"/>
-    
-    
-      <category term="iOS" scheme="http://yoursite.com/tags/iOS/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="http://yoursite.com/2017/08/30/hello-world/"/>
-    <id>http://yoursite.com/2017/08/30/hello-world/</id>
-    <published>2017-08-30T04:50:46.208Z</published>
-    <updated>2017-08-30T08:41:20.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
-    
-    </summary>
-    
-      <category term="深入理解" scheme="http://yoursite.com/categories/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3/"/>
-    
-    
-      <category term="测试" scheme="http://yoursite.com/tags/%E6%B5%8B%E8%AF%95/"/>
     
   </entry>
   
