@@ -1,0 +1,276 @@
+<!-- Head -->
+<!DOCTYPE html>
+<html lang="z">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    
+    <title>Core App | hello, wupeng</title>
+    <meta name="renderer" content="webkit">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta name="description" content="iOS/Android/RN">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Core App | hello, wupeng">
+    <meta name="twitter:description" content="iOS/Android/RN">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Core App | hello, wupeng">
+    <meta property="og:description" content="iOS/Android/RN">
+
+    
+    <meta name="author" content="wu peng">
+    
+    <link rel="stylesheet" href="/css/vno.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+
+    
+    <link rel="icon" href="/images/avatar.jpg">
+    
+
+    <meta name="generator" content="hexo"/>
+    
+    <link rel="alternate" type="application/rss+xml" title="hello, wupeng" href="/atom.xml">
+    
+
+    <link rel="canonical" href="http://yoursite.com/2017/09/24/2017-09/Core-App/"/>
+
+                 
+</head>
+
+<body class="home-template no-js">
+    <script src="//cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
+    <script src="/js/main.js"></script>
+    <span class="mobile btn-mobile-menu">
+        <i class="fa fa-list btn-mobile-menu__icon"></i>
+        <i class="fa fa-angle-up btn-mobile-close__icon hidden"></i>
+    </span>
+
+    <!-- 左边窗口 -->
+<header class="panel-cover panel-cover--collapsed" style="background-image: url(/images/background-cover.jpg)">
+  <div class="panel-main">
+    <div class="panel-main__inner panel-inverted">
+    <div class="panel-main__content">
+
+        <a href="/" title="前往 hello, wupeng 的主页"><img src="/images/avatar.jpg" width="80" alt="hello, wupeng logo" class="panel-cover__logo logo" /></a>
+        <h1 class="panel-cover__title panel-title"><a href="/" title="link to homepage for hello, wupeng">hello, wupeng</a></h1>
+        
+        <hr class="panel-cover__divider" />
+        <p class="panel-cover__description">iOS/Android/RN</p>
+        <hr class="panel-cover__divider panel-cover__divider--secondary" />
+
+        <div class="navigation-wrapper">
+          <div>
+          <nav class="cover-navigation cover-navigation--primary">
+            <ul class="navigation">
+              <li class="navigation__item"><a href="/#blog" title="访问博客" class="blog-button">博客</a></li>
+            
+              <li class="navigation__item"><a href="/category.html">分类</a></li>
+            
+              <li class="navigation__item"><a href="/aboutme.html">关于</a></li>
+            
+            </ul>
+          </nav>
+          </div>
+          <div>
+          <!-- 左边社交 -->
+<nav class="cover-navigation navigation--social">
+  <ul class="navigation">
+
+  <!-- Weibo-->
+  
+
+  <!-- Github -->
+  
+  <li class="navigation__item">
+    <a href="https://github.com/hellowupeng" title="查看我的GitHub主页" target="_blank">
+      <i class='social fa fa-github'></i>
+      <span class="label">Github</span>
+    </a>
+  </li>
+
+
+<!-- Stack Overflow -->
+        
+
+  <!-- Google Plus -->
+  
+
+<!-- Facebook -->
+
+  
+<!-- Twitter -->
+
+  
+
+  <li class="navigation__item">
+    <a href="/atom.xml" title="RSS" target="_blank">
+      <i class='social fa fa-rss'></i>
+      <span class="label">RSS</span>
+    </a>
+  </li>
+
+
+
+  </ul>
+</nav>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="panel-cover--overlay cover-purple"></div>
+  </div> 
+</header>
+
+    <div class="content-wrapper">
+        <div class="content-wrapper__inner">
+            <article class="post-container post-container--single">
+
+  <header class="post-header">
+    <div class="post-meta">
+      <!-- 日期 -->
+<time datetime="2017-09-24T05:55:51.300Z" class="post-list__meta--date date">2017-09-24</time> &#8226; <span class="post-meta__tags tags"><!-- Tags -->
+
+  <a class="tag-link" href="/tags/iOS/">iOS</a>
+ </span>
+      <span class="page-pv">
+       阅读 <span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span>
+      </span> 
+   
+    </div>
+    <h1 class="post-title">Core App</h1>
+  </header>
+
+  <section class="post">
+    <p><a href="https://developer.apple.com/documentation/uikit/core_app" target="_blank" rel="external">原文地址</a></p>
+<p>管理你的应用的数据模型和它与系统的交互。</p>
+<h2 id="主题（Topics）"><a href="#主题（Topics）" class="headerlink" title="主题（Topics）"></a>主题（Topics）</h2><h3 id="应用（Application）"><a href="#应用（Application）" class="headerlink" title="应用（Application）"></a>应用（Application）</h3><h5 id="保护用户隐私"><a href="#保护用户隐私" class="headerlink" title="保护用户隐私"></a><a href="">保护用户隐私</a></h5><p>通过加密个人数据和尊重用户如何使用数据的意愿保护用户隐私</p>
+<p><code>class</code> <a href="">UIApplication</a></p>
+<p>运行在iOS上的应用的控制和协调的集中点。</p>
+<p><code>protocol</code> <a href="">UIApplicationDelegate</a></p>
+<p>由单例 <code>UIApplication</code> 对象调用的方法集合，响应在你的应用的生命周期里的重要事件。</p>
+<p><code>func</code> <a href="">UIApplicationMain</a>( Int32, UnsafeMutablePointer<unsafemutablepointer<int8>&gt;!, String?, String?)</unsafemutablepointer<int8></p>
+<p>创建应用对象和应用代理并设置事件循环（event cycle）。</p>
+<h3 id="设备环境（Device-Environment）"><a href="#设备环境（Device-Environment）" class="headerlink" title="设备环境（Device Environment）"></a>设备环境（Device Environment）</h3><h5 id="响应在-Apple-TV-上改变显示模式"><a href="#响应在-Apple-TV-上改变显示模式" class="headerlink" title="响应在 Apple TV 上改变显示模式"></a><a href="">响应在 Apple TV 上改变显示模式</a></h5><p>当在你设备上的整个屏幕改变时动态地改变图片和资源。</p>
+<p><code>class</code> <a href="">UIDevice</a></p>
+<p>当前设备的描述。</p>
+<p><code>class</code> <a href="https://developer.apple.com/documentation/uikit" target="_blank" rel="external">UITraitCollection</a></p>
+<p>由 trait 定义，用于你的应用的 iOS 界面环境，例如水平和垂直尺寸类（size class），显示缩放和用户界面语言。</p>
+<p><code>protocol</code> <a href="https://developer.apple.com/documentation/uikit" target="_blank" rel="external">UITraitEnvironment</a></p>
+<p>使 iOS 界面环境可用于你的应用的方法集合。</p>
+<p><code>protocol</code> <a href="https://developer.apple.com/documentation/uikit" target="_blank" rel="external">UIAdaptivePresentationControllerDelegate</a></p>
+<p>连同呈现控制器（presentation controller），决定如何响应你的应用里的特征改变的方法集合。</p>
+<h3 id="文档（Documents）"><a href="#文档（Documents）" class="headerlink" title="文档（Documents）"></a>文档（Documents）</h3><p><code>class</code> <a href="https://developer.apple.com/documentation/uikit" target="_blank" rel="external">UIDocument</a></p>
+<p>用于管理你的应用的数据的分离部分的抽象基类。</p>
+<p><code>class</code> <a href="https://developer.apple.com/documentation/uikit" target="_blank" rel="external">UIManagedDocument</a></p>
+<p>与 Core Data 整合的托管的文档对象。</p>
+<h3 id="粘贴板（Pasteboard）"><a href="#粘贴板（Pasteboard）" class="headerlink" title="粘贴板（Pasteboard）"></a>粘贴板（Pasteboard）</h3><p><code>class</code> <a href="https://developer.apple.com/documentation/uikit" target="_blank" rel="external">UIPasteboard</a></p>
+<p>帮助用户从你的应用里的一个地方到另一个地方，从你的应用到其他应用分享数据的对象。</p>
+<p><code>class</code> <a href="https://developer.apple.com/documentation/uikit" target="_blank" rel="external">UIPasteConfiguration</a></p>
+<p>一个对象实现声明它的能力来接收特定的数据类型用于粘贴和用于拖放活动的接口。</p>
+<p><code>protocol</code> <a href="https://developer.apple.com/documentation/uikit" target="_blank" rel="external">UIPasteConfigurationSupporting</a></p>
+<p>决定一个响应器对象是否支持粘贴配置的接口。</p>
+<h3 id="数据管理（Data-Management）"><a href="#数据管理（Data-Management）" class="headerlink" title="数据管理（Data Management）"></a>数据管理（Data Management）</h3><p><code>protocol</code> <a href="https://developer.apple.com/documentation/uikit" target="_blank" rel="external">UIDataSourceModelAssociation</a></p>
+<p>定义一个接口用于在你的应用里对数据对象提供持久引用的方法集合。</p>
+<h3 id="指导访问（Guided-Access）"><a href="#指导访问（Guided-Access）" class="headerlink" title="指导访问（Guided Access）"></a>指导访问（Guided Access）</h3><p><code>protocol</code> <a href="https://developer.apple.com/documentation/uikit" target="_blank" rel="external">UIGuidedAccessRestrictionDelegate</a></p>
+<p>在 iOS 里你用来为指导访问特性添加自定义限制的方法集合。</p>
+<p><code>func</code> <a href="https://developer.apple.com/documentation/uikit" target="_blank" rel="external">UIGuidedAccessRestrictionStateForIdentifier</a>(Striing)</p>
+<p>为特定的指导访问限制返回限制状态。</p>
+<h2 id="另见（See-Also）"><a href="#另见（See-Also）" class="headerlink" title="另见（See Also）"></a>另见（See Also）</h2><h3 id="应用结构（App-Structure）"><a href="#应用结构（App-Structure）" class="headerlink" title="应用结构（App Structure）"></a>应用结构（App Structure）</h3><h5 id="资源管理（Resource-Management）"><a href="#资源管理（Resource-Management）" class="headerlink" title="资源管理（Resource Management）"></a><a href="https://developer.apple.com/documentation/uikit" target="_blank" rel="external">资源管理（Resource Management）</a></h5><p>管理你在你的主可执行文件（main executable）外保存的图片，字符串，故事板（storyboards）和 nib 文件。</p>
+<h5 id="应用拓展（App-Extensions）"><a href="#应用拓展（App-Extensions）" class="headerlink" title="应用拓展（App Extensions）"></a><a href="https://developer.apple.com/documentation/uikit" target="_blank" rel="external">应用拓展（App Extensions）</a></h5><p>拓展你的应用的基础功能到系统的其他部分。</p>
+
+  </section>
+
+</article>
+
+<!-- 更多阅读 -->
+<section class="read-more">
+           
+    
+        
+        
+               
+            <div class="read-more-item">
+                <span class="read-more-item-dim">更早的文章</span>
+                <h2 class="post-list__post-title post-title"><a href="/2017/09/22/2017-09/The-Basics/" title="The Basics">The Basics</a></h2>
+                <p class="excerpt">
+                
+                原文地址
+Swift 是一种用于iOS，macOS，watchOS 和 tvOS 应用开发的新语言。尽管如此，Swift 的许多部分会和你使用 C 和 Objective-C 的开发体验面熟。
+Swift 为所有基础的 C 和 Objective-C 类型提供了自己的版本，包括对于整型的 Int，对
+                &hellip;
+                </p>
+                <div class="post-list__meta"><!-- 日期 -->
+<time datetime="2017-09-22T13:27:29.423Z" class="post-list__meta--date date">2017-09-22</time> &#8226; <span class="post-list__meta--tags tags"><!-- Tags -->
+
+  <a class="tag-link" href="/tags/iOS/">iOS</a>
+</span><a class="btn-border-small" href="/2017/09/22/2017-09/The-Basics/">继续阅读</a></div>
+                       
+            </div>
+        
+     
+   
+   
+  
+</section>
+
+  <!-- 评论 -->
+
+<section class="post-comments">
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+      var disqus_shortname = 'hellowupeng'; 
+      
+  var disqus_identifier = '/2017/09/24/2017-09/Core-App/';
+  var disqus_title = 'Core App';
+  var disqus_url = 'http://yoursite.com/2017/09/24/2017-09/Core-App/';
+  
+
+      /* * * DON'T EDIT BELOW THIS LINE * * */
+      (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          //dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+          dsq.src = 'https://a.disquscdn.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  <a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
+
+            <!-- 底部 -->
+<footer class="footer">
+    <span class="footer__copyright">
+        &copy; 2017 wu peng - 本站点采用<a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享 署名-非商业性使用-相同方式共享 4.0 国际 许可协议</a>
+    </span>
+    <span class="footer__copyright">
+        由 <a href="http://hexo.io">Hexo</a> 驱动. 主题 <a href="https://github.com/monniya/hexo-theme-new-vno ">new-vno</a> 源于 <a href="http://github.com/onevcat/vno" target="_blank">onevcat</a>
+    </span>
+    
+</footer>
+
+
+        </div>
+    </div>
+
+    <!-- google analytics -->
+
+    <!-- 百度统计 -->
+
+
+
+    <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    
+    
+</body>
+</html>
