@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-09-24T06:28:21.000Z</updated>
+  <updated>2017-09-24T10:46:02.773Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -16,11 +16,61 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Core App</title>
+    <title>Swift Standard Library（Swift 标准库）</title>
+    <link href="http://yoursite.com/2017/09/24/2017-09/Swift-Standard-Library/"/>
+    <id>http://yoursite.com/2017/09/24/2017-09/Swift-Standard-Library/</id>
+    <published>2017-09-24T07:39:30.790Z</published>
+    <updated>2017-09-24T10:46:02.773Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="https://developer.apple.com/documentation/swift" target="_blank" rel="external">原文地址</a></p>
+<p>解决复杂问题和写高性能，易读的代码。</p>
+<h2 id="概览（Overview）"><a href="#概览（Overview）" class="headerlink" title="概览（Overview）"></a>概览（Overview）</h2><p>Swift 标准库为写 Swift 程序定义了内层功能，包括：</p>
+<ul>
+<li>基本数据类型，例如 Int，Double 和 String</li>
+<li>常见数据结构，例如数组（Array），字典（Dictionary），和集合（Set）</li>
+<li>全局函数，例如 <code>print(_:separator:teminator:)</code> 和 <code>abs(_:)</code></li>
+<li>描述常见抽象的协议，例如 Collection 和 Equatable</li>
+</ul>
+<blockquote>
+<h6 id="体验标准库"><a href="#体验标准库" class="headerlink" title="体验标准库"></a>体验标准库</h6><p>体验 Swift 标准库类型和使用可视化和实际的例子学习高级概念。学习 Swift 标准库如何使用协议（protocol）和泛型（generics）表达强大的约束。下载下面的 playground 来开始。</p>
+<p><a href="https://developer.apple.com/sample-code/swift/downloads/standard-library.zip" target="_blank" rel="external">Swift Standard Library.plyground</a></p>
+</blockquote>
+<h2 id="主题（Topics）"><a href="#主题（Topics）" class="headerlink" title="主题（Topics）"></a>主题（Topics）</h2><h3 id="值和集合（Values-and-Collections）"><a href="#值和集合（Values-and-Collections）" class="headerlink" title="值和集合（Values and Collections）"></a>值和集合（Values and Collections）</h3><h5 id="数值和基础值（Numbers-and-Basic-Values）"><a href="#数值和基础值（Numbers-and-Basic-Values）" class="headerlink" title="数值和基础值（Numbers and Basic Values）"></a><a href="https://developer.apple.com/documentation/swift/numbers_and_basic_values" target="_blank" rel="external">数值和基础值（Numbers and Basic Values）</a></h5><p>用数值，布尔值和其他基础类型模型数据。</p>
+<h5 id="字符串和文本（Strings-and-Text）"><a href="#字符串和文本（Strings-and-Text）" class="headerlink" title="字符串和文本（Strings and Text）"></a><a href="https://developer.apple.com/documentation/swift/strings_and_text" target="_blank" rel="external">字符串和文本（Strings and Text）</a></h5><p>使用 Unicode-safe 字符串文本工作。</p>
+<h5 id="集合（Collections）"><a href="#集合（Collections）" class="headerlink" title="集合（Collections）"></a><a href="https://developer.apple.com/documentation/swift/collections" target="_blank" rel="external">集合（Collections）</a></h5><p>使用数组，字典，集合和其他数据结构存储和组织数据。</p>
+<h3 id="用于你的类型的工具（Tools-for-your-Types）"><a href="#用于你的类型的工具（Tools-for-your-Types）" class="headerlink" title="用于你的类型的工具（Tools for your Types）"></a>用于你的类型的工具（Tools for your Types）</h3><h5 id="基本行为（Basic-Behaviors）"><a href="#基本行为（Basic-Behaviors）" class="headerlink" title="基本行为（Basic Behaviors）"></a><a href="https://developer.apple.com/documentation/swift/basic_behaviors" target="_blank" rel="external">基本行为（Basic Behaviors）</a></h5><p>取决于相等性或顺序的测试和作为集合和字典的成员来在工作中使用你的自定义类型。</p>
+<h5 id="编码，解码和序列化（Encoding，Decoding，and-Serialization）"><a href="#编码，解码和序列化（Encoding，Decoding，and-Serialization）" class="headerlink" title="编码，解码和序列化（Encoding，Decoding，and Serialization）"></a><a href="https://developer.apple.com/documentation/swift/encoding_decoding_and_serialization" target="_blank" rel="external">编码，解码和序列化（Encoding，Decoding，and Serialization）</a></h5><p>用隐式或自定义编码序列化和反序列化你的类型的实例。</p>
+<h5 id="用字面量初始化（Initialization-with-Literals）"><a href="#用字面量初始化（Initialization-with-Literals）" class="headerlink" title="用字面量初始化（Initialization with Literals）"></a><a href="https://developer.apple.com/documentation/swift/initialization_with_literals" target="_blank" rel="external">用字面量初始化（Initialization with Literals）</a></h5><p>使用不懂种类的字面量允许你的类型的值被表达。</p>
+<h3 id="编程任务（Programming-Tasks）"><a href="#编程任务（Programming-Tasks）" class="headerlink" title="编程任务（Programming Tasks）"></a>编程任务（Programming Tasks）</h3><h5 id="输入和输出（Input-and-Output）"><a href="#输入和输出（Input-and-Output）" class="headerlink" title="输入和输出（Input and Output）"></a><a href="https://developer.apple.com/documentation/swift/input_and_output" target="_blank" rel="external">输入和输出（Input and Output）</a></h5><p>打印到控制台，从文本流读取和写入到文本流，以及使用命令行参数。</p>
+<h5 id="调试和反射（Debugging-and-Reflection）"><a href="#调试和反射（Debugging-and-Reflection）" class="headerlink" title="调试和反射（Debugging and Reflection）"></a><a href="https://developer.apple.com/documentation/swift/debugging_and_reflection" target="_blank" rel="external">调试和反射（Debugging and Reflection）</a></h5><p>使用运行时检查增强你的代码并检查你的值得运行时描述。</p>
+<h5 id="关键路径表达式（Key-Path-Expressions）"><a href="#关键路径表达式（Key-Path-Expressions）" class="headerlink" title="关键路径表达式（Key-Path Expressions）"></a><a href="https://developer.apple.com/documentation/swift/key_path_expressions" target="_blank" rel="external">关键路径表达式（Key-Path Expressions）</a></h5><p>使用关键路径表达式动态地访问属性。</p>
+<h5 id="手动内存管理（Manual-Memory-Management）"><a href="#手动内存管理（Manual-Memory-Management）" class="headerlink" title="手动内存管理（Manual Memory Management）"></a><a href="https://developer.apple.com/documentation/swift/manual_memory_management" target="_blank" rel="external">手动内存管理（Manual Memory Management）</a></h5><p>手动分配和管理内存。</p>
+<h5 id="类型转换和存在类型（Type-Casting-and-Existential-Types）"><a href="#类型转换和存在类型（Type-Casting-and-Existential-Types）" class="headerlink" title="类型转换和存在类型（Type Casting and Existential Types）"></a><a href="https://developer.apple.com/documentation/swift/type_casting_and_existential_types" target="_blank" rel="external">类型转换和存在类型（Type Casting and Existential Types）</a></h5><p>在类型或任何类型的代表值之间执行转换。</p>
+<h5 id="C-互操作性（C-Interoperability）"><a href="#C-互操作性（C-Interoperability）" class="headerlink" title="C 互操作性（C Interoperability）"></a><a href="https://developer.apple.com/documentation/swift/c_interoperability" target="_blank" rel="external">C 互操作性（C Interoperability）</a></h5><p>使用导入的 C 类型或调用 C 的可变（variadic）函数。</p>
+<h5 id="操作符声明（Operator-Declarations）"><a href="#操作符声明（Operator-Declarations）" class="headerlink" title="操作符声明（Operator Declarations）"></a><a href="https://developer.apple.com/documentation/swift/operator_declarations" target="_blank" rel="external">操作符声明（Operator Declarations）</a></h5><p>使用前缀，后缀和中缀操作符。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;a href=&quot;https://developer.apple.com/documentation/swift&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;原文地址&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;解决复杂问题和写高性能，易读的代码。&lt;/p&gt;
+&lt;h2 id=&quot;概
+    
+    </summary>
+    
+      <category term="Apple文档" scheme="http://yoursite.com/categories/Apple%E6%96%87%E6%A1%A3/"/>
+    
+    
+      <category term="iOS" scheme="http://yoursite.com/tags/iOS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Core App（核心应用）</title>
     <link href="http://yoursite.com/2017/09/24/2017-09/Core-App/"/>
     <id>http://yoursite.com/2017/09/24/2017-09/Core-App/</id>
     <published>2017-09-24T05:55:51.300Z</published>
-    <updated>2017-09-24T06:28:21.000Z</updated>
+    <updated>2017-09-24T10:39:31.355Z</updated>
     
     <content type="html"><![CDATA[<p><a href="https://developer.apple.com/documentation/uikit/core_app" target="_blank" rel="external">原文地址</a></p>
 <p>管理你的应用的数据模型和它与系统的交互。</p>
@@ -75,11 +125,11 @@
   </entry>
   
   <entry>
-    <title>The Basics</title>
+    <title>The Basics（基础）</title>
     <link href="http://yoursite.com/2017/09/22/2017-09/The-Basics/"/>
     <id>http://yoursite.com/2017/09/22/2017-09/The-Basics/</id>
     <published>2017-09-22T13:27:29.423Z</published>
-    <updated>2017-09-24T06:25:43.012Z</updated>
+    <updated>2017-09-24T10:39:11.699Z</updated>
     
     <content type="html"><![CDATA[<p><a href="https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/TheBasics.html#//apple_ref/doc/uid/TP40014097-CH5-ID309" target="_blank" rel="external">原文地址</a></p>
 <p>Swift 是一种用于iOS，macOS，watchOS 和 tvOS 应用开发的新语言。尽管如此，Swift 的许多部分会和你使用 C 和 Objective-C 的开发体验面熟。</p>

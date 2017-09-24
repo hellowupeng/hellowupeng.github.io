@@ -1,0 +1,269 @@
+<!-- Head -->
+<!DOCTYPE html>
+<html lang="z">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    
+    <title>Swift Standard Library（Swift 标准库） | hello, wupeng</title>
+    <meta name="renderer" content="webkit">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta name="description" content="iOS/Android/RN">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Swift Standard Library（Swift 标准库） | hello, wupeng">
+    <meta name="twitter:description" content="iOS/Android/RN">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Swift Standard Library（Swift 标准库） | hello, wupeng">
+    <meta property="og:description" content="iOS/Android/RN">
+
+    
+    <meta name="author" content="wu peng">
+    
+    <link rel="stylesheet" href="/css/vno.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+
+    
+    <link rel="icon" href="/images/avatar.jpg">
+    
+
+    <meta name="generator" content="hexo"/>
+    
+    <link rel="alternate" type="application/rss+xml" title="hello, wupeng" href="/atom.xml">
+    
+
+    <link rel="canonical" href="http://yoursite.com/2017/09/24/2017-09/Swift-Standard-Library/"/>
+
+                 
+</head>
+
+<body class="home-template no-js">
+    <script src="//cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
+    <script src="/js/main.js"></script>
+    <span class="mobile btn-mobile-menu">
+        <i class="fa fa-list btn-mobile-menu__icon"></i>
+        <i class="fa fa-angle-up btn-mobile-close__icon hidden"></i>
+    </span>
+
+    <!-- 左边窗口 -->
+<header class="panel-cover panel-cover--collapsed" style="background-image: url(/images/background-cover.jpg)">
+  <div class="panel-main">
+    <div class="panel-main__inner panel-inverted">
+    <div class="panel-main__content">
+
+        <a href="/" title="前往 hello, wupeng 的主页"><img src="/images/avatar.jpg" width="80" alt="hello, wupeng logo" class="panel-cover__logo logo" /></a>
+        <h1 class="panel-cover__title panel-title"><a href="/" title="link to homepage for hello, wupeng">hello, wupeng</a></h1>
+        
+        <hr class="panel-cover__divider" />
+        <p class="panel-cover__description">iOS/Android/RN</p>
+        <hr class="panel-cover__divider panel-cover__divider--secondary" />
+
+        <div class="navigation-wrapper">
+          <div>
+          <nav class="cover-navigation cover-navigation--primary">
+            <ul class="navigation">
+              <li class="navigation__item"><a href="/#blog" title="访问博客" class="blog-button">博客</a></li>
+            
+              <li class="navigation__item"><a href="/category.html">分类</a></li>
+            
+              <li class="navigation__item"><a href="/aboutme.html">关于</a></li>
+            
+            </ul>
+          </nav>
+          </div>
+          <div>
+          <!-- 左边社交 -->
+<nav class="cover-navigation navigation--social">
+  <ul class="navigation">
+
+  <!-- Weibo-->
+  
+
+  <!-- Github -->
+  
+  <li class="navigation__item">
+    <a href="https://github.com/hellowupeng" title="查看我的GitHub主页" target="_blank">
+      <i class='social fa fa-github'></i>
+      <span class="label">Github</span>
+    </a>
+  </li>
+
+
+<!-- Stack Overflow -->
+        
+
+  <!-- Google Plus -->
+  
+
+<!-- Facebook -->
+
+  
+<!-- Twitter -->
+
+  
+
+  <li class="navigation__item">
+    <a href="/atom.xml" title="RSS" target="_blank">
+      <i class='social fa fa-rss'></i>
+      <span class="label">RSS</span>
+    </a>
+  </li>
+
+
+
+  </ul>
+</nav>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="panel-cover--overlay cover-purple"></div>
+  </div> 
+</header>
+
+    <div class="content-wrapper">
+        <div class="content-wrapper__inner">
+            <article class="post-container post-container--single">
+
+  <header class="post-header">
+    <div class="post-meta">
+      <!-- 日期 -->
+<time datetime="2017-09-24T07:39:30.790Z" class="post-list__meta--date date">2017-09-24</time> &#8226; <span class="post-meta__tags tags"><!-- Tags -->
+
+  <a class="tag-link" href="/tags/iOS/">iOS</a>
+ </span>
+      <span class="page-pv">
+       阅读 <span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span>
+      </span> 
+   
+    </div>
+    <h1 class="post-title">Swift Standard Library（Swift 标准库）</h1>
+  </header>
+
+  <section class="post">
+    <p><a href="https://developer.apple.com/documentation/swift" target="_blank" rel="external">原文地址</a></p>
+<p>解决复杂问题和写高性能，易读的代码。</p>
+<h2 id="概览（Overview）"><a href="#概览（Overview）" class="headerlink" title="概览（Overview）"></a>概览（Overview）</h2><p>Swift 标准库为写 Swift 程序定义了内层功能，包括：</p>
+<ul>
+<li>基本数据类型，例如 Int，Double 和 String</li>
+<li>常见数据结构，例如数组（Array），字典（Dictionary），和集合（Set）</li>
+<li>全局函数，例如 <code>print(_:separator:teminator:)</code> 和 <code>abs(_:)</code></li>
+<li>描述常见抽象的协议，例如 Collection 和 Equatable</li>
+</ul>
+<blockquote>
+<h6 id="体验标准库"><a href="#体验标准库" class="headerlink" title="体验标准库"></a>体验标准库</h6><p>体验 Swift 标准库类型和使用可视化和实际的例子学习高级概念。学习 Swift 标准库如何使用协议（protocol）和泛型（generics）表达强大的约束。下载下面的 playground 来开始。</p>
+<p><a href="https://developer.apple.com/sample-code/swift/downloads/standard-library.zip" target="_blank" rel="external">Swift Standard Library.plyground</a></p>
+</blockquote>
+<h2 id="主题（Topics）"><a href="#主题（Topics）" class="headerlink" title="主题（Topics）"></a>主题（Topics）</h2><h3 id="值和集合（Values-and-Collections）"><a href="#值和集合（Values-and-Collections）" class="headerlink" title="值和集合（Values and Collections）"></a>值和集合（Values and Collections）</h3><h5 id="数值和基础值（Numbers-and-Basic-Values）"><a href="#数值和基础值（Numbers-and-Basic-Values）" class="headerlink" title="数值和基础值（Numbers and Basic Values）"></a><a href="https://developer.apple.com/documentation/swift/numbers_and_basic_values" target="_blank" rel="external">数值和基础值（Numbers and Basic Values）</a></h5><p>用数值，布尔值和其他基础类型模型数据。</p>
+<h5 id="字符串和文本（Strings-and-Text）"><a href="#字符串和文本（Strings-and-Text）" class="headerlink" title="字符串和文本（Strings and Text）"></a><a href="https://developer.apple.com/documentation/swift/strings_and_text" target="_blank" rel="external">字符串和文本（Strings and Text）</a></h5><p>使用 Unicode-safe 字符串文本工作。</p>
+<h5 id="集合（Collections）"><a href="#集合（Collections）" class="headerlink" title="集合（Collections）"></a><a href="https://developer.apple.com/documentation/swift/collections" target="_blank" rel="external">集合（Collections）</a></h5><p>使用数组，字典，集合和其他数据结构存储和组织数据。</p>
+<h3 id="用于你的类型的工具（Tools-for-your-Types）"><a href="#用于你的类型的工具（Tools-for-your-Types）" class="headerlink" title="用于你的类型的工具（Tools for your Types）"></a>用于你的类型的工具（Tools for your Types）</h3><h5 id="基本行为（Basic-Behaviors）"><a href="#基本行为（Basic-Behaviors）" class="headerlink" title="基本行为（Basic Behaviors）"></a><a href="https://developer.apple.com/documentation/swift/basic_behaviors" target="_blank" rel="external">基本行为（Basic Behaviors）</a></h5><p>取决于相等性或顺序的测试和作为集合和字典的成员来在工作中使用你的自定义类型。</p>
+<h5 id="编码，解码和序列化（Encoding，Decoding，and-Serialization）"><a href="#编码，解码和序列化（Encoding，Decoding，and-Serialization）" class="headerlink" title="编码，解码和序列化（Encoding，Decoding，and Serialization）"></a><a href="https://developer.apple.com/documentation/swift/encoding_decoding_and_serialization" target="_blank" rel="external">编码，解码和序列化（Encoding，Decoding，and Serialization）</a></h5><p>用隐式或自定义编码序列化和反序列化你的类型的实例。</p>
+<h5 id="用字面量初始化（Initialization-with-Literals）"><a href="#用字面量初始化（Initialization-with-Literals）" class="headerlink" title="用字面量初始化（Initialization with Literals）"></a><a href="https://developer.apple.com/documentation/swift/initialization_with_literals" target="_blank" rel="external">用字面量初始化（Initialization with Literals）</a></h5><p>使用不懂种类的字面量允许你的类型的值被表达。</p>
+<h3 id="编程任务（Programming-Tasks）"><a href="#编程任务（Programming-Tasks）" class="headerlink" title="编程任务（Programming Tasks）"></a>编程任务（Programming Tasks）</h3><h5 id="输入和输出（Input-and-Output）"><a href="#输入和输出（Input-and-Output）" class="headerlink" title="输入和输出（Input and Output）"></a><a href="https://developer.apple.com/documentation/swift/input_and_output" target="_blank" rel="external">输入和输出（Input and Output）</a></h5><p>打印到控制台，从文本流读取和写入到文本流，以及使用命令行参数。</p>
+<h5 id="调试和反射（Debugging-and-Reflection）"><a href="#调试和反射（Debugging-and-Reflection）" class="headerlink" title="调试和反射（Debugging and Reflection）"></a><a href="https://developer.apple.com/documentation/swift/debugging_and_reflection" target="_blank" rel="external">调试和反射（Debugging and Reflection）</a></h5><p>使用运行时检查增强你的代码并检查你的值得运行时描述。</p>
+<h5 id="关键路径表达式（Key-Path-Expressions）"><a href="#关键路径表达式（Key-Path-Expressions）" class="headerlink" title="关键路径表达式（Key-Path Expressions）"></a><a href="https://developer.apple.com/documentation/swift/key_path_expressions" target="_blank" rel="external">关键路径表达式（Key-Path Expressions）</a></h5><p>使用关键路径表达式动态地访问属性。</p>
+<h5 id="手动内存管理（Manual-Memory-Management）"><a href="#手动内存管理（Manual-Memory-Management）" class="headerlink" title="手动内存管理（Manual Memory Management）"></a><a href="https://developer.apple.com/documentation/swift/manual_memory_management" target="_blank" rel="external">手动内存管理（Manual Memory Management）</a></h5><p>手动分配和管理内存。</p>
+<h5 id="类型转换和存在类型（Type-Casting-and-Existential-Types）"><a href="#类型转换和存在类型（Type-Casting-and-Existential-Types）" class="headerlink" title="类型转换和存在类型（Type Casting and Existential Types）"></a><a href="https://developer.apple.com/documentation/swift/type_casting_and_existential_types" target="_blank" rel="external">类型转换和存在类型（Type Casting and Existential Types）</a></h5><p>在类型或任何类型的代表值之间执行转换。</p>
+<h5 id="C-互操作性（C-Interoperability）"><a href="#C-互操作性（C-Interoperability）" class="headerlink" title="C 互操作性（C Interoperability）"></a><a href="https://developer.apple.com/documentation/swift/c_interoperability" target="_blank" rel="external">C 互操作性（C Interoperability）</a></h5><p>使用导入的 C 类型或调用 C 的可变（variadic）函数。</p>
+<h5 id="操作符声明（Operator-Declarations）"><a href="#操作符声明（Operator-Declarations）" class="headerlink" title="操作符声明（Operator Declarations）"></a><a href="https://developer.apple.com/documentation/swift/operator_declarations" target="_blank" rel="external">操作符声明（Operator Declarations）</a></h5><p>使用前缀，后缀和中缀操作符。</p>
+
+  </section>
+
+</article>
+
+<!-- 更多阅读 -->
+<section class="read-more">
+           
+    
+        
+        
+               
+            <div class="read-more-item">
+                <span class="read-more-item-dim">更早的文章</span>
+                <h2 class="post-list__post-title post-title"><a href="/2017/09/24/2017-09/Core-App/" title="Core App（核心应用）">Core App（核心应用）</a></h2>
+                <p class="excerpt">
+                
+                原文地址
+管理你的应用的数据模型和它与系统的交互。
+主题（Topics）应用（Application）保护用户隐私通过加密个人数据和尊重用户如何使用数据的意愿保护用户隐私
+class UIApplication
+运行在iOS上的应用的控制和协调的集中点。
+protocol UIApplication
+                &hellip;
+                </p>
+                <div class="post-list__meta"><!-- 日期 -->
+<time datetime="2017-09-24T05:55:51.300Z" class="post-list__meta--date date">2017-09-24</time> &#8226; <span class="post-list__meta--tags tags"><!-- Tags -->
+
+  <a class="tag-link" href="/tags/iOS/">iOS</a>
+</span><a class="btn-border-small" href="/2017/09/24/2017-09/Core-App/">继续阅读</a></div>
+                       
+            </div>
+        
+     
+   
+   
+  
+</section>
+
+  <!-- 评论 -->
+
+<section class="post-comments">
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+      var disqus_shortname = 'hellowupeng'; 
+      
+  var disqus_identifier = '/2017/09/24/2017-09/Swift-Standard-Library/';
+  var disqus_title = 'Swift Standard Library（Swift 标准库）';
+  var disqus_url = 'http://yoursite.com/2017/09/24/2017-09/Swift-Standard-Library/';
+  
+
+      /* * * DON'T EDIT BELOW THIS LINE * * */
+      (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          //dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+          dsq.src = 'https://a.disquscdn.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  <a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
+
+            <!-- 底部 -->
+<footer class="footer">
+    <span class="footer__copyright">
+        &copy; 2017 wu peng - 本站点采用<a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享 署名-非商业性使用-相同方式共享 4.0 国际 许可协议</a>
+    </span>
+    <span class="footer__copyright">
+        由 <a href="http://hexo.io">Hexo</a> 驱动. 主题 <a href="https://github.com/monniya/hexo-theme-new-vno ">new-vno</a> 源于 <a href="http://github.com/onevcat/vno" target="_blank">onevcat</a>
+    </span>
+    
+</footer>
+
+
+        </div>
+    </div>
+
+    <!-- google analytics -->
+
+    <!-- 百度统计 -->
+
+
+
+    <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    
+    
+</body>
+</html>
