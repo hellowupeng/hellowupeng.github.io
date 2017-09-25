@@ -89,11 +89,11 @@
     <link href="http://yoursite.com/2017/09/24/2017-09/Numbers-and-Basic-Values%EF%BC%89/"/>
     <id>http://yoursite.com/2017/09/24/2017-09/Numbers-and-Basic-Values）/</id>
     <published>2017-09-24T14:07:54.000Z</published>
-    <updated>2017-09-24T23:25:54.748Z</updated>
+    <updated>2017-09-25T23:11:26.553Z</updated>
     
     <content type="html"><![CDATA[<p><a href="https://developer.apple.com/documentation/swift/numbers_and_basic_values" target="_blank" rel="external">原文地址</a></p>
 <p>用数值，布尔值和其他基础类型模型化数据。</p>
-<h2 id="主题（Topics）"><a href="#主题（Topics）" class="headerlink" title="主题（Topics）"></a>主题（Topics）</h2><h3 id="逻辑值（Logical-Values）"><a href="#逻辑值（Logical-Values）" class="headerlink" title="逻辑值（Logical Values）"></a>逻辑值（Logical Values）</h3><p><code>struct</code> <a href="https://developer.apple.com/documentation/swift/bool" target="_blank" rel="external">Bool</a></p>
+<h2 id="主题（Topics）"><a href="#主题（Topics）" class="headerlink" title="主题（Topics）"></a>主题（Topics）</h2><h3 id="逻辑值（Logical-Values）"><a href="#逻辑值（Logical-Values）" class="headerlink" title="逻辑值（Logical Values）"></a>逻辑值（Logical Values）</h3><p><code>struct</code> <a href="/2017/09/25/2017-09/Bool/">Bool</a></p>
 <p>实例是真（true）或假（false）的值类型。</p>
 <h3 id="数值（Numeric-Values）"><a href="#数值（Numeric-Values）" class="headerlink" title="数值（Numeric Values）"></a>数值（Numeric Values）</h3><p><code>struct</code> <a href="https://developer.apple.com/documentation/swift/int" target="_blank" rel="external">Int</a></p>
 <p>有符号整数类型。</p>
