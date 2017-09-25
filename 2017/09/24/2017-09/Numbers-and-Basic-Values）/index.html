@@ -1,0 +1,285 @@
+<!-- Head -->
+<!DOCTYPE html>
+<html lang="z">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    
+    <title>Numbers and Basic Values（数值和基本值） | hello, wupeng</title>
+    <meta name="renderer" content="webkit">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta name="description" content="iOS/Android/RN">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Numbers and Basic Values（数值和基本值） | hello, wupeng">
+    <meta name="twitter:description" content="iOS/Android/RN">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Numbers and Basic Values（数值和基本值） | hello, wupeng">
+    <meta property="og:description" content="iOS/Android/RN">
+
+    
+    <meta name="author" content="wu peng">
+    
+    <link rel="stylesheet" href="/css/vno.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+
+    
+    <link rel="icon" href="/images/avatar.jpg">
+    
+
+    <meta name="generator" content="hexo"/>
+    
+    <link rel="alternate" type="application/rss+xml" title="hello, wupeng" href="/atom.xml">
+    
+
+    <link rel="canonical" href="http://yoursite.com/2017/09/24/2017-09/Numbers-and-Basic-Values）/"/>
+
+                 
+</head>
+
+<body class="home-template no-js">
+    <script src="//cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
+    <script src="/js/main.js"></script>
+    <span class="mobile btn-mobile-menu">
+        <i class="fa fa-list btn-mobile-menu__icon"></i>
+        <i class="fa fa-angle-up btn-mobile-close__icon hidden"></i>
+    </span>
+
+    <!-- 左边窗口 -->
+<header class="panel-cover panel-cover--collapsed" style="background-image: url(/images/background-cover.jpg)">
+  <div class="panel-main">
+    <div class="panel-main__inner panel-inverted">
+    <div class="panel-main__content">
+
+        <a href="/" title="前往 hello, wupeng 的主页"><img src="/images/avatar.jpg" width="80" alt="hello, wupeng logo" class="panel-cover__logo logo" /></a>
+        <h1 class="panel-cover__title panel-title"><a href="/" title="link to homepage for hello, wupeng">hello, wupeng</a></h1>
+        
+        <hr class="panel-cover__divider" />
+        <p class="panel-cover__description">iOS/Android/RN</p>
+        <hr class="panel-cover__divider panel-cover__divider--secondary" />
+
+        <div class="navigation-wrapper">
+          <div>
+          <nav class="cover-navigation cover-navigation--primary">
+            <ul class="navigation">
+              <li class="navigation__item"><a href="/#blog" title="访问博客" class="blog-button">博客</a></li>
+            
+              <li class="navigation__item"><a href="/category.html">分类</a></li>
+            
+              <li class="navigation__item"><a href="/aboutme.html">关于</a></li>
+            
+            </ul>
+          </nav>
+          </div>
+          <div>
+          <!-- 左边社交 -->
+<nav class="cover-navigation navigation--social">
+  <ul class="navigation">
+
+  <!-- Weibo-->
+  
+
+  <!-- Github -->
+  
+  <li class="navigation__item">
+    <a href="https://github.com/hellowupeng" title="查看我的GitHub主页" target="_blank">
+      <i class='social fa fa-github'></i>
+      <span class="label">Github</span>
+    </a>
+  </li>
+
+
+<!-- Stack Overflow -->
+        
+
+  <!-- Google Plus -->
+  
+
+<!-- Facebook -->
+
+  
+<!-- Twitter -->
+
+  
+
+  <li class="navigation__item">
+    <a href="/atom.xml" title="RSS" target="_blank">
+      <i class='social fa fa-rss'></i>
+      <span class="label">RSS</span>
+    </a>
+  </li>
+
+
+
+  </ul>
+</nav>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="panel-cover--overlay cover-purple"></div>
+  </div> 
+</header>
+
+    <div class="content-wrapper">
+        <div class="content-wrapper__inner">
+            <article class="post-container post-container--single">
+
+  <header class="post-header">
+    <div class="post-meta">
+      <!-- 日期 -->
+<time datetime="2017-09-24T14:07:54.000Z" class="post-list__meta--date date">2017-09-24</time> &#8226; <span class="post-meta__tags tags"><!-- Tags -->
+
+  <a class="tag-link" href="/tags/swift-standard-library/">swift standard library</a>
+ </span>
+      <span class="page-pv">
+       阅读 <span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span>
+      </span> 
+   
+    </div>
+    <h1 class="post-title">Numbers and Basic Values（数值和基本值）</h1>
+  </header>
+
+  <section class="post">
+    <p><a href="https://developer.apple.com/documentation/swift/numbers_and_basic_values" target="_blank" rel="external">原文地址</a></p>
+<p>用数值，布尔值和其他基础类型模型化数据。</p>
+<h2 id="主题（Topics）"><a href="#主题（Topics）" class="headerlink" title="主题（Topics）"></a>主题（Topics）</h2><h3 id="逻辑值（Logical-Values）"><a href="#逻辑值（Logical-Values）" class="headerlink" title="逻辑值（Logical Values）"></a>逻辑值（Logical Values）</h3><p><code>struct</code> <a href="https://developer.apple.com/documentation/swift/bool" target="_blank" rel="external">Bool</a></p>
+<p>实例是真（true）或假（false）的值类型。</p>
+<h3 id="数值（Numeric-Values）"><a href="#数值（Numeric-Values）" class="headerlink" title="数值（Numeric Values）"></a>数值（Numeric Values）</h3><p><code>struct</code> <a href="https://developer.apple.com/documentation/swift/int" target="_blank" rel="external">Int</a></p>
+<p>有符号整数类型。</p>
+<p><code>struct</code> <a href="https://developer.apple.com/documentation/swift/double" target="_blank" rel="external">Double</a></p>
+<p>双精度，浮点值类型。</p>
+<p><code>struct</code> <a href="https://developer.apple.com/documentation/swift/float" target="_blank" rel="external">Float</a></p>
+<p>单精度，浮点值类型。</p>
+<h3 id="范围（Ranges）"><a href="#范围（Ranges）" class="headerlink" title="范围（Ranges）"></a>范围（Ranges）</h3><p><code>struct</code> <a href="https://developer.apple.com/documentation/swift/range" target="_blank" rel="external">Range</a></p>
+<p>在一种可比较类型之上的半开区间，从下界到上界，但是不包括下界。</p>
+<p><code>struct</code> <a href="https://developer.apple.com/documentation/swift/closedrange" target="_blank" rel="external">ClosedRange</a></p>
+<p>在一种可比较类型之上的闭区间，从下界到上界，包括下界。</p>
+<h3 id="错误（Errors）"><a href="#错误（Errors）" class="headerlink" title="错误（Errors）"></a>错误（Errors）</h3><p><code>protocol</code> <a href="https://developer.apple.com/documentation/swift/error" target="_blank" rel="external">Error</a></p>
+<p>代表一种能被抛出的错误值。</p>
+<h3 id="可选型（Optionals）"><a href="#可选型（Optionals）" class="headerlink" title="可选型（Optionals）"></a>可选型（Optionals）</h3><p><code>enum</code> <a href="https://developer.apple.com/documentation/swift/optional" target="_blank" rel="external">Optional</a></p>
+<p>代表是一种包裹的值（wrapped）或空（nil）—值的缺失的类型。</p>
+<h3 id="高级数值（Advanced-Numerics）"><a href="#高级数值（Advanced-Numerics）" class="headerlink" title="高级数值（Advanced Numerics）"></a>高级数值（Advanced Numerics）</h3><h5 id="数值协议（Numeric-Protocols）"><a href="#数值协议（Numeric-Protocols）" class="headerlink" title="数值协议（Numeric Protocols）"></a><a href="https://developer.apple.com/documentation/swift/numbers_and_basic_values/numeric_protocols" target="_blank" rel="external">数值协议（Numeric Protocols）</a></h5><p>写和任何数值类型工作的通用代码。</p>
+<h5 id="特殊使用的数值类型（Special-Use-Numeric-Types）"><a href="#特殊使用的数值类型（Special-Use-Numeric-Types）" class="headerlink" title="特殊使用的数值类型（Special-Use Numeric Types）"></a><a href="https://developer.apple.com/documentation/swift/numbers_and_basic_values/special_use_numeric_types" target="_blank" rel="external">特殊使用的数值类型（Special-Use Numeric Types）</a></h5><p>和不同尺寸的固定宽度数值类型工作。</p>
+<h5 id="全局数值函数（Global-Numeric-Function）"><a href="#全局数值函数（Global-Numeric-Function）" class="headerlink" title="全局数值函数（Global Numeric Function）"></a><a href="https://developer.apple.com/documentation/swift/numbers_and_basic_values/global_numeric_functions" target="_blank" rel="external">全局数值函数（Global Numeric Function）</a></h5><p>与数值和其他可比较类型使用这些函数。</p>
+<h2 id="另见（See-Also）"><a href="#另见（See-Also）" class="headerlink" title="另见（See Also）"></a>另见（See Also）</h2><h3 id="值和集合（Values-and-Collections）"><a href="#值和集合（Values-and-Collections）" class="headerlink" title="值和集合（Values and Collections）"></a>值和集合（Values and Collections）</h3><h5 id="字符串和文本（Strings-and-Text）"><a href="#字符串和文本（Strings-and-Text）" class="headerlink" title="字符串和文本（Strings and Text）"></a><a href="https://developer.apple.com/documentation/swift/strings_and_text" target="_blank" rel="external">字符串和文本（Strings and Text）</a></h5><p>和使用 Unicode-safe 的字符串的文本工作。</p>
+<h5 id="集合（Collections）"><a href="#集合（Collections）" class="headerlink" title="集合（Collections）"></a><a href="https://developer.apple.com/documentation/swift/collections" target="_blank" rel="external">集合（Collections）</a></h5><p>使用数组，字典，集合和其他数据结构存储和组织数据。</p>
+
+  </section>
+
+</article>
+
+<!-- 更多阅读 -->
+<section class="read-more">
+           
+    
+               
+            <div class="read-more-item">
+                <span class="read-more-item-dim">最近的文章</span>
+                <h2 class="post-list__post-title post-title"><a href="/2017/09/25/2017-09/Bool/" title="Bool（布尔型）">Bool（布尔型）</a></h2>
+                <p class="excerpt">
+                
+                Structure实例是真或假的值类型。
+概览（Overview）在 Swift 里 Bool 代表布尔值。通过使用布尔值真（true）或假（false）中的一个，或者通过赋值布尔方法或操作的结果到变量或常量来创建 Bool 实例。
+1234567891011var godotHasArrived 
+                &hellip;
+                </p>
+                <div class="post-list__meta"><!-- 日期 -->
+<time datetime="2017-09-24T23:59:49.127Z" class="post-list__meta--date date">2017-09-25</time> &#8226; <span class="post-list__meta--tags tags"><!-- Tags -->
+
+  <a class="tag-link" href="/tags/Numbers-and-Basic-Values/">Numbers and Basic Values</a>
+</span><a class="btn-border-small" href="/2017/09/25/2017-09/Bool/">继续阅读</a></div>
+                           
+            </div>
+        
+        
+               
+            <div class="read-more-item">
+                <span class="read-more-item-dim">更早的文章</span>
+                <h2 class="post-list__post-title post-title"><a href="/2017/09/24/2017-09/Swift-Standard-Library/" title="Swift Standard Library（Swift 标准库）">Swift Standard Library（Swift 标准库）</a></h2>
+                <p class="excerpt">
+                
+                原文地址
+解决复杂问题和写高性能，易读的代码。
+概览（Overview）Swift 标准库为写 Swift 程序定义了内层功能，包括：
+
+基本数据类型，例如 Int，Double 和 String
+常见数据结构，例如数组（Array），字典（Dictionary），和集合（Set）
+全局函数，例如 
+                &hellip;
+                </p>
+                <div class="post-list__meta"><!-- 日期 -->
+<time datetime="2017-09-24T07:39:30.790Z" class="post-list__meta--date date">2017-09-24</time> &#8226; <span class="post-list__meta--tags tags"><!-- Tags -->
+
+  <a class="tag-link" href="/tags/apple-docs/">apple docs</a>
+</span><a class="btn-border-small" href="/2017/09/24/2017-09/Swift-Standard-Library/">继续阅读</a></div>
+                       
+            </div>
+        
+     
+   
+   
+  
+</section>
+
+  <!-- 评论 -->
+
+<section class="post-comments">
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+      var disqus_shortname = 'hellowupeng'; 
+      
+  var disqus_identifier = '/2017/09/24/2017-09/Numbers-and-Basic-Values）/';
+  var disqus_title = 'Numbers and Basic Values（数值和基本值）';
+  var disqus_url = 'http://yoursite.com/2017/09/24/2017-09/Numbers-and-Basic-Values）/';
+  
+
+      /* * * DON'T EDIT BELOW THIS LINE * * */
+      (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          //dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+          dsq.src = 'https://a.disquscdn.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  <a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
+
+            <!-- 底部 -->
+<footer class="footer">
+    <span class="footer__copyright">
+        &copy; 2017 wu peng - 本站点采用<a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享 署名-非商业性使用-相同方式共享 4.0 国际 许可协议</a>
+    </span>
+    <span class="footer__copyright">
+        由 <a href="http://hexo.io">Hexo</a> 驱动. 主题 <a href="https://github.com/monniya/hexo-theme-new-vno ">new-vno</a> 源于 <a href="http://github.com/onevcat/vno" target="_blank">onevcat</a>
+    </span>
+    
+</footer>
+
+
+        </div>
+    </div>
+
+    <!-- google analytics -->
+
+    <!-- 百度统计 -->
+
+
+
+    <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    
+    
+</body>
+</html>

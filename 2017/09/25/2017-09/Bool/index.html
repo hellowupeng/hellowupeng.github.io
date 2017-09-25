@@ -1,0 +1,291 @@
+<!-- Head -->
+<!DOCTYPE html>
+<html lang="z">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    
+    <title>Bool（布尔型） | hello, wupeng</title>
+    <meta name="renderer" content="webkit">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta name="description" content="iOS/Android/RN">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Bool（布尔型） | hello, wupeng">
+    <meta name="twitter:description" content="iOS/Android/RN">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Bool（布尔型） | hello, wupeng">
+    <meta property="og:description" content="iOS/Android/RN">
+
+    
+    <meta name="author" content="wu peng">
+    
+    <link rel="stylesheet" href="/css/vno.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+
+    
+    <link rel="icon" href="/images/avatar.jpg">
+    
+
+    <meta name="generator" content="hexo"/>
+    
+    <link rel="alternate" type="application/rss+xml" title="hello, wupeng" href="/atom.xml">
+    
+
+    <link rel="canonical" href="http://yoursite.com/2017/09/25/2017-09/Bool/"/>
+
+                 
+</head>
+
+<body class="home-template no-js">
+    <script src="//cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
+    <script src="/js/main.js"></script>
+    <span class="mobile btn-mobile-menu">
+        <i class="fa fa-list btn-mobile-menu__icon"></i>
+        <i class="fa fa-angle-up btn-mobile-close__icon hidden"></i>
+    </span>
+
+    <!-- 左边窗口 -->
+<header class="panel-cover panel-cover--collapsed" style="background-image: url(/images/background-cover.jpg)">
+  <div class="panel-main">
+    <div class="panel-main__inner panel-inverted">
+    <div class="panel-main__content">
+
+        <a href="/" title="前往 hello, wupeng 的主页"><img src="/images/avatar.jpg" width="80" alt="hello, wupeng logo" class="panel-cover__logo logo" /></a>
+        <h1 class="panel-cover__title panel-title"><a href="/" title="link to homepage for hello, wupeng">hello, wupeng</a></h1>
+        
+        <hr class="panel-cover__divider" />
+        <p class="panel-cover__description">iOS/Android/RN</p>
+        <hr class="panel-cover__divider panel-cover__divider--secondary" />
+
+        <div class="navigation-wrapper">
+          <div>
+          <nav class="cover-navigation cover-navigation--primary">
+            <ul class="navigation">
+              <li class="navigation__item"><a href="/#blog" title="访问博客" class="blog-button">博客</a></li>
+            
+              <li class="navigation__item"><a href="/category.html">分类</a></li>
+            
+              <li class="navigation__item"><a href="/aboutme.html">关于</a></li>
+            
+            </ul>
+          </nav>
+          </div>
+          <div>
+          <!-- 左边社交 -->
+<nav class="cover-navigation navigation--social">
+  <ul class="navigation">
+
+  <!-- Weibo-->
+  
+
+  <!-- Github -->
+  
+  <li class="navigation__item">
+    <a href="https://github.com/hellowupeng" title="查看我的GitHub主页" target="_blank">
+      <i class='social fa fa-github'></i>
+      <span class="label">Github</span>
+    </a>
+  </li>
+
+
+<!-- Stack Overflow -->
+        
+
+  <!-- Google Plus -->
+  
+
+<!-- Facebook -->
+
+  
+<!-- Twitter -->
+
+  
+
+  <li class="navigation__item">
+    <a href="/atom.xml" title="RSS" target="_blank">
+      <i class='social fa fa-rss'></i>
+      <span class="label">RSS</span>
+    </a>
+  </li>
+
+
+
+  </ul>
+</nav>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="panel-cover--overlay cover-purple"></div>
+  </div> 
+</header>
+
+    <div class="content-wrapper">
+        <div class="content-wrapper__inner">
+            <article class="post-container post-container--single">
+
+  <header class="post-header">
+    <div class="post-meta">
+      <!-- 日期 -->
+<time datetime="2017-09-24T23:59:49.127Z" class="post-list__meta--date date">2017-09-25</time> &#8226; <span class="post-meta__tags tags"><!-- Tags -->
+
+  <a class="tag-link" href="/tags/Numbers-and-Basic-Values/">Numbers and Basic Values</a>
+ </span>
+      <span class="page-pv">
+       阅读 <span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span>
+      </span> 
+   
+    </div>
+    <h1 class="post-title">Bool（布尔型）</h1>
+  </header>
+
+  <section class="post">
+    <h6 id="Structure"><a href="#Structure" class="headerlink" title="Structure"></a>Structure</h6><p>实例是真或假的值类型。</p>
+<h2 id="概览（Overview）"><a href="#概览（Overview）" class="headerlink" title="概览（Overview）"></a>概览（Overview）</h2><p>在 Swift 里 Bool 代表布尔值。通过使用布尔值真（true）或假（false）中的一个，或者通过赋值布尔方法或操作的结果到变量或常量来创建 Bool 实例。</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> godotHasArrived = <span class="literal">false</span></div><div class="line"></div><div class="line"><span class="keyword">let</span> numbers = <span class="number">1</span>...<span class="number">5</span></div><div class="line"><span class="keyword">let</span> containsTen = numbers.<span class="built_in">contains</span>(<span class="number">10</span>)</div><div class="line"><span class="built_in">print</span>(containsTen)</div><div class="line"><span class="comment">// Prints "false"</span></div><div class="line"></div><div class="line"><span class="keyword">let</span> (a, b) = (<span class="number">100</span>, <span class="number">101</span>)</div><div class="line"><span class="keyword">let</span> aFirst = a &lt; b</div><div class="line"><span class="built_in">print</span>(aFirst)</div><div class="line"><span class="comment">// Prints "true"</span></div></pre></td></tr></table></figure>
+<p>在条件比较的环境里 Swift 只是用简单的布尔值帮助避免意外的编程错误和帮助维持每个控制语句的清晰。不像在其他编程语言里一样，在 Swift 里，整型和字符串不能被使用在要求是布尔值的地方。</p>
+<p>例如，以下代码示例不会编译，因为他尝试在逻辑环境下使用整型 <code>i</code>。</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> i = <span class="number">5</span></div><div class="line"><span class="keyword">while</span> i &#123;</div><div class="line">  <span class="built_in">print</span>(i)</div><div class="line">  i -= <span class="number">1</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>在 Swift 里正确的方法是在 while 语句中比较 i 和 0。</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">while</span> i != <span class="number">0</span> &#123;</div><div class="line">  <span class="built_in">print</span>(i)</div><div class="line">  i -= <span class="number">1</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="使用导入的布尔值（Using-Imported-Boolean-values）"><a href="#使用导入的布尔值（Using-Imported-Boolean-values）" class="headerlink" title="使用导入的布尔值（Using Imported Boolean values）"></a>使用导入的布尔值（Using Imported Boolean values）</h3><p>C bool 和 Boolean 类型和 Objective-C BOOL 类型都被桥接到 Swift 里作为 Bool。在 Swift 里单一的 Bool 类型保证了从 C 和 Objective-C 里导入的函数（functions），方法（methods）和属性（properties）有一个一致的类型接口。</p>
+<h2 id="主题（Topics）"><a href="#主题（Topics）" class="headerlink" title="主题（Topics）"></a>主题（Topics）</h2><h3 id="比较布尔值（Comparing-Boolean-Values）"><a href="#比较布尔值（Comparing-Boolean-Values）" class="headerlink" title="比较布尔值（Comparing Boolean Values）"></a>比较布尔值（Comparing Boolean Values）</h3><p><code>static func ==(Bool)</code></p>
+<p><code>static func !=(Bool, Bool)</code></p>
+<p>返回表示两个值是否不相等的布尔值。‘</p>
+<h3 id="转换一个布尔值（Transforming-a-Boolean）"><a href="#转换一个布尔值（Transforming-a-Boolean）" class="headerlink" title="转换一个布尔值（Transforming a Boolean）"></a>转换一个布尔值（Transforming a Boolean）</h3><p><code>static func !(Bool)</code></p>
+<p>在一个布尔值上执行逻辑非操作。</p>
+<p><code>static func ||(Bool, () -&gt; Bool)</code></p>
+<p>在两个布尔值上执行逻辑或操作。</p>
+<p><code>static func &amp;&amp;(Bool, () -&gt; Bool)</code></p>
+<p>在两个布尔值上执行逻辑与操作。</p>
+<h3 id="描述一个布尔值（Describing-a-Boolean）"><a href="#描述一个布尔值（Describing-a-Boolean）" class="headerlink" title="描述一个布尔值（Describing a Boolean）"></a>描述一个布尔值（Describing a Boolean）</h3><p><a href="https://developer.apple.com/documentation/swift/bool/1538894-description" target="_blank" rel="external"><code>var</code> description<code>: String</code></a></p>
+<p>布尔值的文本表示。</p>
+<h3 id="检查布尔值（Inspecting-a-Boolean）"><a href="#检查布尔值（Inspecting-a-Boolean）" class="headerlink" title="检查布尔值（Inspecting a Boolean）"></a>检查布尔值（Inspecting a Boolean）</h3><p><a href="https://developer.apple.com/documentation/swift/bool/1641275-custommirror" target="_blank" rel="external"><code>var</code> customMirror<code>: Mirror</code></a></p>
+<p>反射布尔值的一个镜像。</p>
+<p><a href="https://developer.apple.com/documentation/swift/bool/1641275-custommirror" target="_blank" rel="external"><code>var</code> customPlaygroundQuickLook<code>: PlaygroundQuickLook</code></a></p>
+<p><a href="https://developer.apple.com/documentation/swift/bool/1540169-hashvalue" target="_blank" rel="external"><code>var</code> hashValue<code>: Int</code></a></p>
+<p>布尔值哈希值。</p>
+<h3 id="从另一个值创建布尔值（Creating-a-Boolean-From-Another-Value）"><a href="#从另一个值创建布尔值（Creating-a-Boolean-From-Another-Value）" class="headerlink" title="从另一个值创建布尔值（Creating a Boolean From Another Value）"></a>从另一个值创建布尔值（Creating a Boolean From Another Value）</h3><p><a href="https://developer.apple.com/documentation/swift/bool/1540923-init" target="_blank" rel="external">init<code>(Bool)</code></a></p>
+<p>创建一个等于给定布尔值的实例。</p>
+<p><a href="https://developer.apple.com/documentation/swift/bool/2428231-init" target="_blank" rel="external">init<code>?(String)</code></a></p>
+<p>从给定字符串创建一个新的布尔值。</p>
+<p><a href="https://developer.apple.com/documentation/swift/bool/2895323-init" target="_blank" rel="external">init(truncating: <code>NSNumber</code>)</a></p>
+<p><a href="https://developer.apple.com/documentation/swift/bool/2895341-init" target="_blank" rel="external">init?(exactly: <code>NSNumber</code>)</a></p>
+<h3 id="编码和解码（Encoding-and-Decodiing）"><a href="#编码和解码（Encoding-and-Decodiing）" class="headerlink" title="编码和解码（Encoding and Decodiing）"></a>编码和解码（Encoding and Decodiing）</h3><p><a href="https://developer.apple.com/documentation/swift/bool/2894515-init" target="_blank" rel="external">init(from: <code>Decoder</code>)</a></p>
+<p><a href="https://developer.apple.com/documentation/swift/bool/2894902-encode" target="_blank" rel="external"><code>func</code> encode(to: <code>Encoder</code>)</a></p>
+<h3 id="极少使用的初始化器（Infrequently-Used-Initializers）"><a href="#极少使用的初始化器（Infrequently-Used-Initializers）" class="headerlink" title="极少使用的初始化器（Infrequently Used Initializers）"></a>极少使用的初始化器（Infrequently Used Initializers）</h3><p><a href="https://developer.apple.com/documentation/swift/bool/1539399-init" target="_blank" rel="external">init()</a></p>
+<p>创建一个初始化为假的实例。</p>
+<p><a href="https://developer.apple.com/documentation/swift/bool/1540965-init" target="_blank" rel="external">init(booleanLiteral: <code>Bool</code>)</a></p>
+<p>创建一个初始化为指定布尔值字面量的实例。</p>
+<h2 id="关系（Relationships）"><a href="#关系（Relationships）" class="headerlink" title="关系（Relationships）"></a>关系（Relationships）</h2><h3 id="遵循（协议）（Conforms-To）"><a href="#遵循（协议）（Conforms-To）" class="headerlink" title="遵循（协议）（Conforms To）"></a>遵循（协议）（Conforms To）</h3><ul>
+<li><a href="https://developer.apple.com/documentation/swift/customplaygroundquicklookable" target="_blank" rel="external">CustomPlaygroundQuickLookable</a></li>
+<li><a href="https://developer.apple.com/documentation/swift/customreflectable" target="_blank" rel="external">CustomReflectable</a></li>
+<li><a href="https://developer.apple.com/documentation/swift/customstringconvertible" target="_blank" rel="external">CustomStringConvertible</a></li>
+<li><a href="https://developer.apple.com/documentation/swift/equatable" target="_blank" rel="external">Equatable</a></li>
+<li><a href="https://developer.apple.com/documentation/swift/expressiblebybooleanliteral" target="_blank" rel="external">ExpressibleByBooleanLiteral</a></li>
+<li><a href="https://developer.apple.com/documentation/swift/hashable" target="_blank" rel="external">Hashable</a></li>
+<li><a href="https://developer.apple.com/documentation/swift/losslessstringconvertible" target="_blank" rel="external">LosslessStringConvertible</a></li>
+</ul>
+
+  </section>
+
+</article>
+
+<!-- 更多阅读 -->
+<section class="read-more">
+           
+    
+        
+        
+               
+            <div class="read-more-item">
+                <span class="read-more-item-dim">更早的文章</span>
+                <h2 class="post-list__post-title post-title"><a href="/2017/09/24/2017-09/Numbers-and-Basic-Values）/" title="Numbers and Basic Values（数值和基本值）">Numbers and Basic Values（数值和基本值）</a></h2>
+                <p class="excerpt">
+                
+                原文地址
+用数值，布尔值和其他基础类型模型化数据。
+主题（Topics）逻辑值（Logical Values）struct Bool
+实例是真（true）或假（false）的值类型。
+数值（Numeric Values）struct Int
+有符号整数类型。
+struct Double
+双精度，浮点
+                &hellip;
+                </p>
+                <div class="post-list__meta"><!-- 日期 -->
+<time datetime="2017-09-24T14:07:54.000Z" class="post-list__meta--date date">2017-09-24</time> &#8226; <span class="post-list__meta--tags tags"><!-- Tags -->
+
+  <a class="tag-link" href="/tags/swift-standard-library/">swift standard library</a>
+</span><a class="btn-border-small" href="/2017/09/24/2017-09/Numbers-and-Basic-Values）/">继续阅读</a></div>
+                       
+            </div>
+        
+     
+   
+   
+  
+</section>
+
+  <!-- 评论 -->
+
+<section class="post-comments">
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+      var disqus_shortname = 'hellowupeng'; 
+      
+  var disqus_identifier = '/2017/09/25/2017-09/Bool/';
+  var disqus_title = 'Bool（布尔型）';
+  var disqus_url = 'http://yoursite.com/2017/09/25/2017-09/Bool/';
+  
+
+      /* * * DON'T EDIT BELOW THIS LINE * * */
+      (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          //dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+          dsq.src = 'https://a.disquscdn.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  <a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
+
+            <!-- 底部 -->
+<footer class="footer">
+    <span class="footer__copyright">
+        &copy; 2017 wu peng - 本站点采用<a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享 署名-非商业性使用-相同方式共享 4.0 国际 许可协议</a>
+    </span>
+    <span class="footer__copyright">
+        由 <a href="http://hexo.io">Hexo</a> 驱动. 主题 <a href="https://github.com/monniya/hexo-theme-new-vno ">new-vno</a> 源于 <a href="http://github.com/onevcat/vno" target="_blank">onevcat</a>
+    </span>
+    
+</footer>
+
+
+        </div>
+    </div>
+
+    <!-- google analytics -->
+
+    <!-- 百度统计 -->
+
+
+
+    <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    
+    
+</body>
+</html>

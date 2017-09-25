@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-09-24T10:46:02.773Z</updated>
+  <updated>2017-09-25T23:06:15.486Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -16,11 +16,126 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Bool（布尔型）</title>
+    <link href="http://yoursite.com/2017/09/25/2017-09/Bool/"/>
+    <id>http://yoursite.com/2017/09/25/2017-09/Bool/</id>
+    <published>2017-09-24T23:59:49.127Z</published>
+    <updated>2017-09-25T23:06:15.486Z</updated>
+    
+    <content type="html"><![CDATA[<h6 id="Structure"><a href="#Structure" class="headerlink" title="Structure"></a>Structure</h6><p>实例是真或假的值类型。</p>
+<h2 id="概览（Overview）"><a href="#概览（Overview）" class="headerlink" title="概览（Overview）"></a>概览（Overview）</h2><p>在 Swift 里 Bool 代表布尔值。通过使用布尔值真（true）或假（false）中的一个，或者通过赋值布尔方法或操作的结果到变量或常量来创建 Bool 实例。</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> godotHasArrived = <span class="literal">false</span></div><div class="line"></div><div class="line"><span class="keyword">let</span> numbers = <span class="number">1</span>...<span class="number">5</span></div><div class="line"><span class="keyword">let</span> containsTen = numbers.<span class="built_in">contains</span>(<span class="number">10</span>)</div><div class="line"><span class="built_in">print</span>(containsTen)</div><div class="line"><span class="comment">// Prints "false"</span></div><div class="line"></div><div class="line"><span class="keyword">let</span> (a, b) = (<span class="number">100</span>, <span class="number">101</span>)</div><div class="line"><span class="keyword">let</span> aFirst = a &lt; b</div><div class="line"><span class="built_in">print</span>(aFirst)</div><div class="line"><span class="comment">// Prints "true"</span></div></pre></td></tr></table></figure>
+<p>在条件比较的环境里 Swift 只是用简单的布尔值帮助避免意外的编程错误和帮助维持每个控制语句的清晰。不像在其他编程语言里一样，在 Swift 里，整型和字符串不能被使用在要求是布尔值的地方。</p>
+<p>例如，以下代码示例不会编译，因为他尝试在逻辑环境下使用整型 <code>i</code>。</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> i = <span class="number">5</span></div><div class="line"><span class="keyword">while</span> i &#123;</div><div class="line">  <span class="built_in">print</span>(i)</div><div class="line">  i -= <span class="number">1</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>在 Swift 里正确的方法是在 while 语句中比较 i 和 0。</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">while</span> i != <span class="number">0</span> &#123;</div><div class="line">  <span class="built_in">print</span>(i)</div><div class="line">  i -= <span class="number">1</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="使用导入的布尔值（Using-Imported-Boolean-values）"><a href="#使用导入的布尔值（Using-Imported-Boolean-values）" class="headerlink" title="使用导入的布尔值（Using Imported Boolean values）"></a>使用导入的布尔值（Using Imported Boolean values）</h3><p>C bool 和 Boolean 类型和 Objective-C BOOL 类型都被桥接到 Swift 里作为 Bool。在 Swift 里单一的 Bool 类型保证了从 C 和 Objective-C 里导入的函数（functions），方法（methods）和属性（properties）有一个一致的类型接口。</p>
+<h2 id="主题（Topics）"><a href="#主题（Topics）" class="headerlink" title="主题（Topics）"></a>主题（Topics）</h2><h3 id="比较布尔值（Comparing-Boolean-Values）"><a href="#比较布尔值（Comparing-Boolean-Values）" class="headerlink" title="比较布尔值（Comparing Boolean Values）"></a>比较布尔值（Comparing Boolean Values）</h3><p><code>static func ==(Bool)</code></p>
+<p><code>static func !=(Bool, Bool)</code></p>
+<p>返回表示两个值是否不相等的布尔值。‘</p>
+<h3 id="转换一个布尔值（Transforming-a-Boolean）"><a href="#转换一个布尔值（Transforming-a-Boolean）" class="headerlink" title="转换一个布尔值（Transforming a Boolean）"></a>转换一个布尔值（Transforming a Boolean）</h3><p><code>static func !(Bool)</code></p>
+<p>在一个布尔值上执行逻辑非操作。</p>
+<p><code>static func ||(Bool, () -&gt; Bool)</code></p>
+<p>在两个布尔值上执行逻辑或操作。</p>
+<p><code>static func &amp;&amp;(Bool, () -&gt; Bool)</code></p>
+<p>在两个布尔值上执行逻辑与操作。</p>
+<h3 id="描述一个布尔值（Describing-a-Boolean）"><a href="#描述一个布尔值（Describing-a-Boolean）" class="headerlink" title="描述一个布尔值（Describing a Boolean）"></a>描述一个布尔值（Describing a Boolean）</h3><p><a href="https://developer.apple.com/documentation/swift/bool/1538894-description" target="_blank" rel="external"><code>var</code> description<code>: String</code></a></p>
+<p>布尔值的文本表示。</p>
+<h3 id="检查布尔值（Inspecting-a-Boolean）"><a href="#检查布尔值（Inspecting-a-Boolean）" class="headerlink" title="检查布尔值（Inspecting a Boolean）"></a>检查布尔值（Inspecting a Boolean）</h3><p><a href="https://developer.apple.com/documentation/swift/bool/1641275-custommirror" target="_blank" rel="external"><code>var</code> customMirror<code>: Mirror</code></a></p>
+<p>反射布尔值的一个镜像。</p>
+<p><a href="https://developer.apple.com/documentation/swift/bool/1641275-custommirror" target="_blank" rel="external"><code>var</code> customPlaygroundQuickLook<code>: PlaygroundQuickLook</code></a></p>
+<p><a href="https://developer.apple.com/documentation/swift/bool/1540169-hashvalue" target="_blank" rel="external"><code>var</code> hashValue<code>: Int</code></a></p>
+<p>布尔值哈希值。</p>
+<h3 id="从另一个值创建布尔值（Creating-a-Boolean-From-Another-Value）"><a href="#从另一个值创建布尔值（Creating-a-Boolean-From-Another-Value）" class="headerlink" title="从另一个值创建布尔值（Creating a Boolean From Another Value）"></a>从另一个值创建布尔值（Creating a Boolean From Another Value）</h3><p><a href="https://developer.apple.com/documentation/swift/bool/1540923-init" target="_blank" rel="external">init<code>(Bool)</code></a></p>
+<p>创建一个等于给定布尔值的实例。</p>
+<p><a href="https://developer.apple.com/documentation/swift/bool/2428231-init" target="_blank" rel="external">init<code>?(String)</code></a></p>
+<p>从给定字符串创建一个新的布尔值。</p>
+<p><a href="https://developer.apple.com/documentation/swift/bool/2895323-init" target="_blank" rel="external">init(truncating: <code>NSNumber</code>)</a></p>
+<p><a href="https://developer.apple.com/documentation/swift/bool/2895341-init" target="_blank" rel="external">init?(exactly: <code>NSNumber</code>)</a></p>
+<h3 id="编码和解码（Encoding-and-Decodiing）"><a href="#编码和解码（Encoding-and-Decodiing）" class="headerlink" title="编码和解码（Encoding and Decodiing）"></a>编码和解码（Encoding and Decodiing）</h3><p><a href="https://developer.apple.com/documentation/swift/bool/2894515-init" target="_blank" rel="external">init(from: <code>Decoder</code>)</a></p>
+<p><a href="https://developer.apple.com/documentation/swift/bool/2894902-encode" target="_blank" rel="external"><code>func</code> encode(to: <code>Encoder</code>)</a></p>
+<h3 id="极少使用的初始化器（Infrequently-Used-Initializers）"><a href="#极少使用的初始化器（Infrequently-Used-Initializers）" class="headerlink" title="极少使用的初始化器（Infrequently Used Initializers）"></a>极少使用的初始化器（Infrequently Used Initializers）</h3><p><a href="https://developer.apple.com/documentation/swift/bool/1539399-init" target="_blank" rel="external">init()</a></p>
+<p>创建一个初始化为假的实例。</p>
+<p><a href="https://developer.apple.com/documentation/swift/bool/1540965-init" target="_blank" rel="external">init(booleanLiteral: <code>Bool</code>)</a></p>
+<p>创建一个初始化为指定布尔值字面量的实例。</p>
+<h2 id="关系（Relationships）"><a href="#关系（Relationships）" class="headerlink" title="关系（Relationships）"></a>关系（Relationships）</h2><h3 id="遵循（协议）（Conforms-To）"><a href="#遵循（协议）（Conforms-To）" class="headerlink" title="遵循（协议）（Conforms To）"></a>遵循（协议）（Conforms To）</h3><ul>
+<li><a href="https://developer.apple.com/documentation/swift/customplaygroundquicklookable" target="_blank" rel="external">CustomPlaygroundQuickLookable</a></li>
+<li><a href="https://developer.apple.com/documentation/swift/customreflectable" target="_blank" rel="external">CustomReflectable</a></li>
+<li><a href="https://developer.apple.com/documentation/swift/customstringconvertible" target="_blank" rel="external">CustomStringConvertible</a></li>
+<li><a href="https://developer.apple.com/documentation/swift/equatable" target="_blank" rel="external">Equatable</a></li>
+<li><a href="https://developer.apple.com/documentation/swift/expressiblebybooleanliteral" target="_blank" rel="external">ExpressibleByBooleanLiteral</a></li>
+<li><a href="https://developer.apple.com/documentation/swift/hashable" target="_blank" rel="external">Hashable</a></li>
+<li><a href="https://developer.apple.com/documentation/swift/losslessstringconvertible" target="_blank" rel="external">LosslessStringConvertible</a></li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h6 id=&quot;Structure&quot;&gt;&lt;a href=&quot;#Structure&quot; class=&quot;headerlink&quot; title=&quot;Structure&quot;&gt;&lt;/a&gt;Structure&lt;/h6&gt;&lt;p&gt;实例是真或假的值类型。&lt;/p&gt;
+&lt;h2 id=&quot;概览（Overview）&quot;&gt;&lt;a h
+    
+    </summary>
+    
+      <category term="Apple文档" scheme="http://yoursite.com/categories/Apple%E6%96%87%E6%A1%A3/"/>
+    
+    
+      <category term="Numbers and Basic Values" scheme="http://yoursite.com/tags/Numbers-and-Basic-Values/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Numbers and Basic Values（数值和基本值）</title>
+    <link href="http://yoursite.com/2017/09/24/2017-09/Numbers-and-Basic-Values%EF%BC%89/"/>
+    <id>http://yoursite.com/2017/09/24/2017-09/Numbers-and-Basic-Values）/</id>
+    <published>2017-09-24T14:07:54.000Z</published>
+    <updated>2017-09-24T23:25:54.748Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="https://developer.apple.com/documentation/swift/numbers_and_basic_values" target="_blank" rel="external">原文地址</a></p>
+<p>用数值，布尔值和其他基础类型模型化数据。</p>
+<h2 id="主题（Topics）"><a href="#主题（Topics）" class="headerlink" title="主题（Topics）"></a>主题（Topics）</h2><h3 id="逻辑值（Logical-Values）"><a href="#逻辑值（Logical-Values）" class="headerlink" title="逻辑值（Logical Values）"></a>逻辑值（Logical Values）</h3><p><code>struct</code> <a href="https://developer.apple.com/documentation/swift/bool" target="_blank" rel="external">Bool</a></p>
+<p>实例是真（true）或假（false）的值类型。</p>
+<h3 id="数值（Numeric-Values）"><a href="#数值（Numeric-Values）" class="headerlink" title="数值（Numeric Values）"></a>数值（Numeric Values）</h3><p><code>struct</code> <a href="https://developer.apple.com/documentation/swift/int" target="_blank" rel="external">Int</a></p>
+<p>有符号整数类型。</p>
+<p><code>struct</code> <a href="https://developer.apple.com/documentation/swift/double" target="_blank" rel="external">Double</a></p>
+<p>双精度，浮点值类型。</p>
+<p><code>struct</code> <a href="https://developer.apple.com/documentation/swift/float" target="_blank" rel="external">Float</a></p>
+<p>单精度，浮点值类型。</p>
+<h3 id="范围（Ranges）"><a href="#范围（Ranges）" class="headerlink" title="范围（Ranges）"></a>范围（Ranges）</h3><p><code>struct</code> <a href="https://developer.apple.com/documentation/swift/range" target="_blank" rel="external">Range</a></p>
+<p>在一种可比较类型之上的半开区间，从下界到上界，但是不包括下界。</p>
+<p><code>struct</code> <a href="https://developer.apple.com/documentation/swift/closedrange" target="_blank" rel="external">ClosedRange</a></p>
+<p>在一种可比较类型之上的闭区间，从下界到上界，包括下界。</p>
+<h3 id="错误（Errors）"><a href="#错误（Errors）" class="headerlink" title="错误（Errors）"></a>错误（Errors）</h3><p><code>protocol</code> <a href="https://developer.apple.com/documentation/swift/error" target="_blank" rel="external">Error</a></p>
+<p>代表一种能被抛出的错误值。</p>
+<h3 id="可选型（Optionals）"><a href="#可选型（Optionals）" class="headerlink" title="可选型（Optionals）"></a>可选型（Optionals）</h3><p><code>enum</code> <a href="https://developer.apple.com/documentation/swift/optional" target="_blank" rel="external">Optional</a></p>
+<p>代表是一种包裹的值（wrapped）或空（nil）—值的缺失的类型。</p>
+<h3 id="高级数值（Advanced-Numerics）"><a href="#高级数值（Advanced-Numerics）" class="headerlink" title="高级数值（Advanced Numerics）"></a>高级数值（Advanced Numerics）</h3><h5 id="数值协议（Numeric-Protocols）"><a href="#数值协议（Numeric-Protocols）" class="headerlink" title="数值协议（Numeric Protocols）"></a><a href="https://developer.apple.com/documentation/swift/numbers_and_basic_values/numeric_protocols" target="_blank" rel="external">数值协议（Numeric Protocols）</a></h5><p>写和任何数值类型工作的通用代码。</p>
+<h5 id="特殊使用的数值类型（Special-Use-Numeric-Types）"><a href="#特殊使用的数值类型（Special-Use-Numeric-Types）" class="headerlink" title="特殊使用的数值类型（Special-Use Numeric Types）"></a><a href="https://developer.apple.com/documentation/swift/numbers_and_basic_values/special_use_numeric_types" target="_blank" rel="external">特殊使用的数值类型（Special-Use Numeric Types）</a></h5><p>和不同尺寸的固定宽度数值类型工作。</p>
+<h5 id="全局数值函数（Global-Numeric-Function）"><a href="#全局数值函数（Global-Numeric-Function）" class="headerlink" title="全局数值函数（Global Numeric Function）"></a><a href="https://developer.apple.com/documentation/swift/numbers_and_basic_values/global_numeric_functions" target="_blank" rel="external">全局数值函数（Global Numeric Function）</a></h5><p>与数值和其他可比较类型使用这些函数。</p>
+<h2 id="另见（See-Also）"><a href="#另见（See-Also）" class="headerlink" title="另见（See Also）"></a>另见（See Also）</h2><h3 id="值和集合（Values-and-Collections）"><a href="#值和集合（Values-and-Collections）" class="headerlink" title="值和集合（Values and Collections）"></a>值和集合（Values and Collections）</h3><h5 id="字符串和文本（Strings-and-Text）"><a href="#字符串和文本（Strings-and-Text）" class="headerlink" title="字符串和文本（Strings and Text）"></a><a href="https://developer.apple.com/documentation/swift/strings_and_text" target="_blank" rel="external">字符串和文本（Strings and Text）</a></h5><p>和使用 Unicode-safe 的字符串的文本工作。</p>
+<h5 id="集合（Collections）"><a href="#集合（Collections）" class="headerlink" title="集合（Collections）"></a><a href="https://developer.apple.com/documentation/swift/collections" target="_blank" rel="external">集合（Collections）</a></h5><p>使用数组，字典，集合和其他数据结构存储和组织数据。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;a href=&quot;https://developer.apple.com/documentation/swift/numbers_and_basic_values&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;原文地址&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;用数值，布尔值
+    
+    </summary>
+    
+      <category term="Apple文档" scheme="http://yoursite.com/categories/Apple%E6%96%87%E6%A1%A3/"/>
+    
+    
+      <category term="swift standard library" scheme="http://yoursite.com/tags/swift-standard-library/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Swift Standard Library（Swift 标准库）</title>
     <link href="http://yoursite.com/2017/09/24/2017-09/Swift-Standard-Library/"/>
     <id>http://yoursite.com/2017/09/24/2017-09/Swift-Standard-Library/</id>
     <published>2017-09-24T07:39:30.790Z</published>
-    <updated>2017-09-24T10:46:02.773Z</updated>
+    <updated>2017-09-24T23:35:06.885Z</updated>
     
     <content type="html"><![CDATA[<p><a href="https://developer.apple.com/documentation/swift" target="_blank" rel="external">原文地址</a></p>
 <p>解决复杂问题和写高性能，易读的代码。</p>
@@ -35,7 +150,7 @@
 <h6 id="体验标准库"><a href="#体验标准库" class="headerlink" title="体验标准库"></a>体验标准库</h6><p>体验 Swift 标准库类型和使用可视化和实际的例子学习高级概念。学习 Swift 标准库如何使用协议（protocol）和泛型（generics）表达强大的约束。下载下面的 playground 来开始。</p>
 <p><a href="https://developer.apple.com/sample-code/swift/downloads/standard-library.zip" target="_blank" rel="external">Swift Standard Library.plyground</a></p>
 </blockquote>
-<h2 id="主题（Topics）"><a href="#主题（Topics）" class="headerlink" title="主题（Topics）"></a>主题（Topics）</h2><h3 id="值和集合（Values-and-Collections）"><a href="#值和集合（Values-and-Collections）" class="headerlink" title="值和集合（Values and Collections）"></a>值和集合（Values and Collections）</h3><h5 id="数值和基础值（Numbers-and-Basic-Values）"><a href="#数值和基础值（Numbers-and-Basic-Values）" class="headerlink" title="数值和基础值（Numbers and Basic Values）"></a><a href="https://developer.apple.com/documentation/swift/numbers_and_basic_values" target="_blank" rel="external">数值和基础值（Numbers and Basic Values）</a></h5><p>用数值，布尔值和其他基础类型模型数据。</p>
+<h2 id="主题（Topics）"><a href="#主题（Topics）" class="headerlink" title="主题（Topics）"></a>主题（Topics）</h2><h3 id="值和集合（Values-and-Collections）"><a href="#值和集合（Values-and-Collections）" class="headerlink" title="值和集合（Values and Collections）"></a>值和集合（Values and Collections）</h3><h5 id="数值和基础值（Numbers-and-Basic-Values）"><a href="#数值和基础值（Numbers-and-Basic-Values）" class="headerlink" title="数值和基础值（Numbers and Basic Values）"></a><a href="/2017/09/24/2017-09/Numbers-and-Basic-Values）/">数值和基础值（Numbers and Basic Values）</a></h5><p>用数值，布尔值和其他基础类型模型数据。</p>
 <h5 id="字符串和文本（Strings-and-Text）"><a href="#字符串和文本（Strings-and-Text）" class="headerlink" title="字符串和文本（Strings and Text）"></a><a href="https://developer.apple.com/documentation/swift/strings_and_text" target="_blank" rel="external">字符串和文本（Strings and Text）</a></h5><p>使用 Unicode-safe 字符串文本工作。</p>
 <h5 id="集合（Collections）"><a href="#集合（Collections）" class="headerlink" title="集合（Collections）"></a><a href="https://developer.apple.com/documentation/swift/collections" target="_blank" rel="external">集合（Collections）</a></h5><p>使用数组，字典，集合和其他数据结构存储和组织数据。</p>
 <h3 id="用于你的类型的工具（Tools-for-your-Types）"><a href="#用于你的类型的工具（Tools-for-your-Types）" class="headerlink" title="用于你的类型的工具（Tools for your Types）"></a>用于你的类型的工具（Tools for your Types）</h3><h5 id="基本行为（Basic-Behaviors）"><a href="#基本行为（Basic-Behaviors）" class="headerlink" title="基本行为（Basic Behaviors）"></a><a href="https://developer.apple.com/documentation/swift/basic_behaviors" target="_blank" rel="external">基本行为（Basic Behaviors）</a></h5><p>取决于相等性或顺序的测试和作为集合和字典的成员来在工作中使用你的自定义类型。</p>
@@ -61,7 +176,7 @@
       <category term="Apple文档" scheme="http://yoursite.com/categories/Apple%E6%96%87%E6%A1%A3/"/>
     
     
-      <category term="iOS" scheme="http://yoursite.com/tags/iOS/"/>
+      <category term="apple docs" scheme="http://yoursite.com/tags/apple-docs/"/>
     
   </entry>
   
@@ -70,7 +185,7 @@
     <link href="http://yoursite.com/2017/09/24/2017-09/Core-App/"/>
     <id>http://yoursite.com/2017/09/24/2017-09/Core-App/</id>
     <published>2017-09-24T05:55:51.300Z</published>
-    <updated>2017-09-24T10:39:31.355Z</updated>
+    <updated>2017-09-24T23:28:36.898Z</updated>
     
     <content type="html"><![CDATA[<p><a href="https://developer.apple.com/documentation/uikit/core_app" target="_blank" rel="external">原文地址</a></p>
 <p>管理你的应用的数据模型和它与系统的交互。</p>
@@ -120,7 +235,7 @@
       <category term="Apple文档" scheme="http://yoursite.com/categories/Apple%E6%96%87%E6%A1%A3/"/>
     
     
-      <category term="iOS" scheme="http://yoursite.com/tags/iOS/"/>
+      <category term="UIKit" scheme="http://yoursite.com/tags/UIKit/"/>
     
   </entry>
   
@@ -129,7 +244,7 @@
     <link href="http://yoursite.com/2017/09/22/2017-09/The-Basics/"/>
     <id>http://yoursite.com/2017/09/22/2017-09/The-Basics/</id>
     <published>2017-09-22T13:27:29.423Z</published>
-    <updated>2017-09-24T10:39:11.699Z</updated>
+    <updated>2017-09-24T23:27:28.159Z</updated>
     
     <content type="html"><![CDATA[<p><a href="https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/TheBasics.html#//apple_ref/doc/uid/TP40014097-CH5-ID309" target="_blank" rel="external">原文地址</a></p>
 <p>Swift 是一种用于iOS，macOS，watchOS 和 tvOS 应用开发的新语言。尽管如此，Swift 的许多部分会和你使用 C 和 Objective-C 的开发体验面熟。</p>
@@ -173,7 +288,7 @@
       <category term="Swift" scheme="http://yoursite.com/categories/Swift/"/>
     
     
-      <category term="iOS" scheme="http://yoursite.com/tags/iOS/"/>
+      <category term="swift programming guide" scheme="http://yoursite.com/tags/swift-programming-guide/"/>
     
   </entry>
   
@@ -182,7 +297,7 @@
     <link href="http://yoursite.com/2017/09/22/2017-09/UIkit/"/>
     <id>http://yoursite.com/2017/09/22/2017-09/UIkit/</id>
     <published>2017-09-22T13:27:11.102Z</published>
-    <updated>2017-09-23T13:31:31.064Z</updated>
+    <updated>2017-09-24T23:32:56.563Z</updated>
     
     <content type="html"><![CDATA[<p><a href="https://developer.apple.com/documentation/uikit" target="_blank" rel="external">原文地址</a></p>
 <p>为你的 iOS 或 tvOS 应用构建并管理一个图形的、事件驱动的用户界面。</p>
@@ -191,7 +306,7 @@
 <h5 id="重要"><a href="#重要" class="headerlink" title="重要"></a>重要</h5><p>除非另外说明，只在你的应用的主线程（main thread）或主调度队列（main dispatch queue）使用 UIKit 类。这个限制特别应用于起源自 UIResponder 或涉及以任何方式操作你的应用的用户界面的类。</p>
 </blockquote>
 <h2 id="主题（Topics）"><a href="#主题（Topics）" class="headerlink" title="主题（Topics）"></a>主题（Topics）</h2><h3 id="应用结构（App-Structure）"><a href="#应用结构（App-Structure）" class="headerlink" title="应用结构（App Structure）"></a>应用结构（App Structure）</h3><p>UIKit 管理你的应用和系统的交互并为你提供类来管理你的应用的数据和资源。</p>
-<h5 id="核心应用（Core-App）"><a href="#核心应用（Core-App）" class="headerlink" title="核心应用（Core App）"></a><a href="">核心应用（Core App）</a></h5><p>管理你的应用的数据模型以及他和系统的交互。</p>
+<h5 id="核心应用（Core-App）"><a href="#核心应用（Core-App）" class="headerlink" title="核心应用（Core App）"></a><a href="/2017/09/24/2017-09/Core-App/">核心应用（Core App）</a></h5><p>管理你的应用的数据模型以及他和系统的交互。</p>
 <h5 id="资源管理（Resource-Management）"><a href="#资源管理（Resource-Management）" class="headerlink" title="资源管理（Resource Management）"></a><a href="">资源管理（Resource Management）</a></h5><p>管理你在你的主要的可执行文件外存储的图片、字符串、storyboards 和 nib 文件。</p>
 <h5 id="应用拓展（App-Extensions）"><a href="#应用拓展（App-Extensions）" class="headerlink" title="应用拓展（App Extensions）"></a><a href="">应用拓展（App Extensions）</a></h5><p>拓展你的应用的基础功能到系统的其他部分。</p>
 <h3 id="用户界面（User-Interface）"><a href="#用户界面（User-Interface）" class="headerlink" title="用户界面（User Interface）"></a>用户界面（User Interface）</h3><p>视图（Views）帮助你在屏幕上显示内容和促进用户交互；视图控制器（view controllers）帮助你管理视图（views）和界面结构。</p>
@@ -235,7 +350,7 @@
       <category term="Apple文档" scheme="http://yoursite.com/categories/Apple%E6%96%87%E6%A1%A3/"/>
     
     
-      <category term="iOS" scheme="http://yoursite.com/tags/iOS/"/>
+      <category term="apple docs" scheme="http://yoursite.com/tags/apple-docs/"/>
     
   </entry>
   
