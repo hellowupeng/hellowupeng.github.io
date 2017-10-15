@@ -1,0 +1,281 @@
+<!-- Head -->
+<!DOCTYPE html>
+<html lang="z">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    
+    <title>hello, wupeng</title>
+    <meta name="renderer" content="webkit">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta name="description" content="iOS/Android/RN">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="hello, wupeng">
+    <meta name="twitter:description" content="iOS/Android/RN">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="hello, wupeng">
+    <meta property="og:description" content="iOS/Android/RN">
+
+    
+    <meta name="author" content="wu peng">
+    
+    <link rel="stylesheet" href="/css/vno.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+
+    
+    <link rel="icon" href="/images/avatar.jpg">
+    
+
+    <meta name="generator" content="hexo"/>
+    
+    <link rel="alternate" type="application/rss+xml" title="hello, wupeng" href="/atom.xml">
+    
+
+    <link rel="canonical" href="http://yoursite.com/2017/09/27/2017-09/CustomStringConvertible/"/>
+
+                 
+</head>
+
+<body class="home-template no-js">
+    <script src="//cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
+    <script src="/js/main.js"></script>
+    <span class="mobile btn-mobile-menu">
+        <i class="fa fa-list btn-mobile-menu__icon"></i>
+        <i class="fa fa-angle-up btn-mobile-close__icon hidden"></i>
+    </span>
+
+    <!-- 左边窗口 -->
+<header class="panel-cover panel-cover--collapsed" style="background-image: url(/images/background-cover.jpg)">
+  <div class="panel-main">
+    <div class="panel-main__inner panel-inverted">
+    <div class="panel-main__content">
+
+        <a href="/" title="前往 hello, wupeng 的主页"><img src="/images/avatar.jpg" width="80" alt="hello, wupeng logo" class="panel-cover__logo logo" /></a>
+        <h1 class="panel-cover__title panel-title"><a href="/" title="link to homepage for hello, wupeng">hello, wupeng</a></h1>
+        
+        <hr class="panel-cover__divider" />
+        <p class="panel-cover__description">iOS/Android/RN</p>
+        <hr class="panel-cover__divider panel-cover__divider--secondary" />
+
+        <div class="navigation-wrapper">
+          <div>
+          <nav class="cover-navigation cover-navigation--primary">
+            <ul class="navigation">
+              <li class="navigation__item"><a href="/#blog" title="访问博客" class="blog-button">博客</a></li>
+            
+              <li class="navigation__item"><a href="/category.html">分类</a></li>
+            
+              <li class="navigation__item"><a href="/aboutme.html">关于</a></li>
+            
+            </ul>
+          </nav>
+          </div>
+          <div>
+          <!-- 左边社交 -->
+<nav class="cover-navigation navigation--social">
+  <ul class="navigation">
+
+  <!-- Weibo-->
+  
+
+  <!-- Github -->
+  
+  <li class="navigation__item">
+    <a href="https://github.com/hellowupeng" title="查看我的GitHub主页" target="_blank">
+      <i class='social fa fa-github'></i>
+      <span class="label">Github</span>
+    </a>
+  </li>
+
+
+<!-- Stack Overflow -->
+        
+
+  <!-- Google Plus -->
+  
+
+<!-- Facebook -->
+
+  
+<!-- Twitter -->
+
+  
+
+  <li class="navigation__item">
+    <a href="/atom.xml" title="RSS" target="_blank">
+      <i class='social fa fa-rss'></i>
+      <span class="label">RSS</span>
+    </a>
+  </li>
+
+
+
+  </ul>
+</nav>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="panel-cover--overlay cover-purple"></div>
+  </div> 
+</header>
+
+    <div class="content-wrapper">
+        <div class="content-wrapper__inner">
+            <article class="post-container post-container--single">
+
+  <header class="post-header">
+    <div class="post-meta">
+      <!-- 日期 -->
+<time datetime="2017-09-26T22:27:05.441Z" class="post-list__meta--date date">2017-09-27</time> &#8226; <span class="post-meta__tags tags"><!-- Tags -->
+ </span>
+      <span class="page-pv">
+       阅读 <span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span>
+      </span> 
+   
+    </div>
+    <h1 class="post-title"></h1>
+  </header>
+
+  <section class="post">
+    <h1 id="CustomStringConvertible"><a href="#CustomStringConvertible" class="headerlink" title="CustomStringConvertible"></a>CustomStringConvertible</h1><h6 id="Protocol"><a href="#Protocol" class="headerlink" title="Protocol"></a>Protocol</h6><p>用自定义文本表示的类型。</p>
+<h2 id="概览（Overview）"><a href="#概览（Overview）" class="headerlink" title="概览（Overview）"></a>概览（Overview）</h2><p>遵循 <code>CustomStringConvertible</code> 协议的类型当转变实例为字符串时，能提供他们自己的表示来使用。要转换任何类型的实例到字符串，<code>String(describing:)</code> 初始化器是较好的方式。如果传入的实例遵循 CustomStringConvertible，<code>String(describing:)</code> 初始化器和 <code>print(_:)</code> 函数使用实例的自定义 <code>description</code> 属性。</p>
+<p>直接访问一个类型的 <code>description</code> 属性或使用 <code>CustomStringConvertible</code> 作为通用约束是被阻止的。 </p>
+<h3 id="遵循-CustomStringConvertible-协议"><a href="#遵循-CustomStringConvertible-协议" class="headerlink" title="遵循 CustomStringConvertible 协议"></a>遵循 CustomStringConvertible 协议</h3><p>通过定义一个 <code>description</code> 属性添加遵循的 CustomStringConvertible 到你的自定义类型。</p>
+<p>例如，这个自定义 Point 结构使用由标准库提供的默认表示。</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">struct</span> <span class="title">Point</span> </span>&#123;</div><div class="line">    <span class="keyword">let</span> x: <span class="type">Int</span>, y: <span class="type">Int</span></div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">let</span> p = <span class="type">Point</span>(x: <span class="number">21</span>, y: <span class="number">30</span>)</div><div class="line"><span class="built_in">print</span>(p)</div><div class="line"><span class="comment">// Prints "Point(x: 21, y:30)"</span></div></pre></td></tr></table></figure>
+<p>在实现 <code>description</code> 属性并声明遵循的 CustomStringConvertible 后，Point 类型提供它自己的自定义表示。</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">extension</span> <span class="title">Point</span>: <span class="title">CustomStringConvertible</span> </span>&#123;</div><div class="line">    <span class="keyword">var</span> description: <span class="type">String</span> &#123;</div><div class="line">        <span class="keyword">return</span> <span class="string">"(<span class="subst">\(x)</span>, <span class="subst">\(y)</span>)"</span></div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="built_in">print</span>(p)</div><div class="line"><span class="comment">// Prints "(21, 30)"</span></div></pre></td></tr></table></figure>
+<h2 id="主题（Topics）"><a href="#主题（Topics）" class="headerlink" title="主题（Topics）"></a>主题（Topics）</h2><h3 id="实例属性（Instance-Properties）"><a href="#实例属性（Instance-Properties）" class="headerlink" title="实例属性（Instance Properties）"></a>实例属性（Instance Properties）</h3><h6 id="var-description-String"><a href="#var-description-String" class="headerlink" title="var description: String"></a>var description: String</h6><p>实例的文本表示。</p>
+<h5 id="必要的"><a href="#必要的" class="headerlink" title="必要的"></a>必要的</h5><h2 id="关系（Relationships）"><a href="#关系（Relationships）" class="headerlink" title="关系（Relationships）"></a>关系（Relationships）</h2><h3 id="继承的类（Inherit-By）"><a href="#继承的类（Inherit-By）" class="headerlink" title="继承的类（Inherit By）"></a>继承的类（Inherit By）</h3><h6 id="BinaryInteger-LosslessStringConvertible-ReferenceConvertible"><a href="#BinaryInteger-LosslessStringConvertible-ReferenceConvertible" class="headerlink" title="BinaryInteger, LosslessStringConvertible, ReferenceConvertible"></a>BinaryInteger, LosslessStringConvertible, ReferenceConvertible</h6><h3 id="采用的类（Adopted-By）"><a href="#采用的类（Adopted-By）" class="headerlink" title="采用的类（Adopted By）"></a>采用的类（Adopted By）</h3><h6 id="AffineTransform，IndexSet"><a href="#AffineTransform，IndexSet" class="headerlink" title="AffineTransform，IndexSet"></a>AffineTransform，IndexSet</h6><h6 id="AnyHashable，IndexSet-Index"><a href="#AnyHashable，IndexSet-Index" class="headerlink" title="AnyHashable，IndexSet.Index"></a>AnyHashable，IndexSet.Index</h6><h6 id="Array，Locale"><a href="#Array，Locale" class="headerlink" title="Array，Locale"></a>Array，Locale</h6><h6 id="ArraySlice，MeasureMent"><a href="#ArraySlice，MeasureMent" class="headerlink" title="ArraySlice，MeasureMent"></a>ArraySlice，MeasureMent</h6><h6 id="Bool，-Mirror"><a href="#Bool，-Mirror" class="headerlink" title="Bool， Mirror"></a>Bool， Mirror</h6><p>Calendar，NSObject</p>
+<p>CGFloat，ObjcBool</p>
+<p>Character，PersonNameComponent</p>
+<p>CharacterSet，Range，</p>
+<p>ClosedRange，Selector</p>
+<p>ContiguousArray，Set</p>
+<p>CountableClosedRange，StaticString</p>
+<p>CountableRange，String</p>
+<p>Data，String.Unicode</p>
+<p>Date，ScalarView</p>
+<p>DateComponents，String.UTF16View</p>
+<p>DateInterval，String.UTF8View</p>
+<p>Decimal，Substring</p>
+<p>Dictionary，TimeZone</p>
+<p>Double，Unicode.Scalar</p>
+<p>Float，URL</p>
+<p>Float80，URLComponents</p>
+<p>ImplicitlyUnwrappedOptional，URLQueryItem</p>
+<p>IndexPath，URLRequest，UUID</p>
+<h2 id="另见（See-Also）"><a href="#另见（See-Also）" class="headerlink" title="另见（See Also）"></a>另见（See Also）</h2><h3 id="字符串表示（String-Representation）"><a href="#字符串表示（String-Representation）" class="headerlink" title="字符串表示（String Representation）"></a>字符串表示（String Representation）</h3><h6 id="protocol-LosslessStringConvertible"><a href="#protocol-LosslessStringConvertible" class="headerlink" title="protocol LosslessStringConvertible"></a>protocol LosslessStringConvertible</h6><p>能被用无损的，清晰地方式表示为字符串的类型。</p>
+<h6 id="protocol-CustomDebugStringConvertible"><a href="#protocol-CustomDebugStringConvertible" class="headerlink" title="protocol CustomDebugStringConvertible"></a>protocol CustomDebugStringConvertible</h6><p>适用于调试目的自定义的文本表示的类型。</p>
+
+  </section>
+
+</article>
+
+<!-- 更多阅读 -->
+<section class="read-more">
+           
+    
+               
+            <div class="read-more-item">
+                <span class="read-more-item-dim">最近的文章</span>
+                <h2 class="post-list__post-title post-title"><a href="/2017/09/27/2017-09/LosslessStringConvertible/" title=""></a></h2>
+                <p class="excerpt">
+                
+                LosslessStringConvertibleProtocol能用无损的，清晰的方式表示为字符串的类型。
+概览（Overview）例如，整数值1050能用它的全部被表示为“1050”。
+一个符合类型的 description 属性必须是原始值的值保护表示。同样的，他应该能从字符串表示重新创建一个
+                &hellip;
+                </p>
+                <div class="post-list__meta"><!-- 日期 -->
+<time datetime="2017-09-26T23:54:45.769Z" class="post-list__meta--date date">2017-09-27</time> &#8226; <span class="post-list__meta--tags tags"><!-- Tags -->
+</span><a class="btn-border-small" href="/2017/09/27/2017-09/LosslessStringConvertible/">继续阅读</a></div>
+                           
+            </div>
+        
+        
+               
+            <div class="read-more-item">
+                <span class="read-more-item-dim">更早的文章</span>
+                <h2 class="post-list__post-title post-title"><a href="/2017/09/27/2017-09/Swift-Standard-Library-Bool/" title=""></a></h2>
+                <p class="excerpt">
+                
+                布尔数据类型和支持的操作符。实例是真或假的值类型
+12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667
+                &hellip;
+                </p>
+                <div class="post-list__meta"><!-- 日期 -->
+<time datetime="2017-09-26T22:20:40.014Z" class="post-list__meta--date date">2017-09-27</time> &#8226; <span class="post-list__meta--tags tags"><!-- Tags -->
+</span><a class="btn-border-small" href="/2017/09/27/2017-09/Swift-Standard-Library-Bool/">继续阅读</a></div>
+                       
+            </div>
+        
+     
+   
+   
+  
+</section>
+
+  <!-- 评论 -->
+
+<section class="post-comments">
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+      var disqus_shortname = 'hellowupeng'; 
+      
+  var disqus_identifier = '/2017/09/27/2017-09/CustomStringConvertible/';
+  var disqus_title = '';
+  var disqus_url = 'http://yoursite.com/2017/09/27/2017-09/CustomStringConvertible/';
+  
+
+      /* * * DON'T EDIT BELOW THIS LINE * * */
+      (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          //dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+          dsq.src = 'https://a.disquscdn.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  <a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
+
+            <!-- 底部 -->
+<footer class="footer">
+    <span class="footer__copyright">
+        &copy; 2017 wu peng - 本站点采用<a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享 署名-非商业性使用-相同方式共享 4.0 国际 许可协议</a>
+    </span>
+    <span class="footer__copyright">
+        由 <a href="http://hexo.io">Hexo</a> 驱动. 主题 <a href="https://github.com/monniya/hexo-theme-new-vno ">new-vno</a> 源于 <a href="http://github.com/onevcat/vno" target="_blank">onevcat</a>
+    </span>
+    
+</footer>
+
+
+        </div>
+    </div>
+
+    <!-- google analytics -->
+
+    <!-- 百度统计 -->
+
+
+
+    <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    
+    
+</body>
+</html>

@@ -1,0 +1,254 @@
+<!-- Head -->
+<!DOCTYPE html>
+<html lang="z">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    
+    <title>AnyHashable.swift | hello, wupeng</title>
+    <meta name="renderer" content="webkit">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta name="description" content="iOS/Android/RN">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="AnyHashable.swift | hello, wupeng">
+    <meta name="twitter:description" content="iOS/Android/RN">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="AnyHashable.swift | hello, wupeng">
+    <meta property="og:description" content="iOS/Android/RN">
+
+    
+    <meta name="author" content="wu peng">
+    
+    <link rel="stylesheet" href="/css/vno.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+
+    
+    <link rel="icon" href="/images/avatar.jpg">
+    
+
+    <meta name="generator" content="hexo"/>
+    
+    <link rel="alternate" type="application/rss+xml" title="hello, wupeng" href="/atom.xml">
+    
+
+    <link rel="canonical" href="http://yoursite.com/2017/10/10/2017-10/AnyHashable.swift/"/>
+
+                 
+</head>
+
+<body class="home-template no-js">
+    <script src="//cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
+    <script src="/js/main.js"></script>
+    <span class="mobile btn-mobile-menu">
+        <i class="fa fa-list btn-mobile-menu__icon"></i>
+        <i class="fa fa-angle-up btn-mobile-close__icon hidden"></i>
+    </span>
+
+    <!-- 左边窗口 -->
+<header class="panel-cover panel-cover--collapsed" style="background-image: url(/images/background-cover.jpg)">
+  <div class="panel-main">
+    <div class="panel-main__inner panel-inverted">
+    <div class="panel-main__content">
+
+        <a href="/" title="前往 hello, wupeng 的主页"><img src="/images/avatar.jpg" width="80" alt="hello, wupeng logo" class="panel-cover__logo logo" /></a>
+        <h1 class="panel-cover__title panel-title"><a href="/" title="link to homepage for hello, wupeng">hello, wupeng</a></h1>
+        
+        <hr class="panel-cover__divider" />
+        <p class="panel-cover__description">iOS/Android/RN</p>
+        <hr class="panel-cover__divider panel-cover__divider--secondary" />
+
+        <div class="navigation-wrapper">
+          <div>
+          <nav class="cover-navigation cover-navigation--primary">
+            <ul class="navigation">
+              <li class="navigation__item"><a href="/#blog" title="访问博客" class="blog-button">博客</a></li>
+            
+              <li class="navigation__item"><a href="/category.html">分类</a></li>
+            
+              <li class="navigation__item"><a href="/aboutme.html">关于</a></li>
+            
+            </ul>
+          </nav>
+          </div>
+          <div>
+          <!-- 左边社交 -->
+<nav class="cover-navigation navigation--social">
+  <ul class="navigation">
+
+  <!-- Weibo-->
+  
+
+  <!-- Github -->
+  
+  <li class="navigation__item">
+    <a href="https://github.com/hellowupeng" title="查看我的GitHub主页" target="_blank">
+      <i class='social fa fa-github'></i>
+      <span class="label">Github</span>
+    </a>
+  </li>
+
+
+<!-- Stack Overflow -->
+        
+
+  <!-- Google Plus -->
+  
+
+<!-- Facebook -->
+
+  
+<!-- Twitter -->
+
+  
+
+  <li class="navigation__item">
+    <a href="/atom.xml" title="RSS" target="_blank">
+      <i class='social fa fa-rss'></i>
+      <span class="label">RSS</span>
+    </a>
+  </li>
+
+
+
+  </ul>
+</nav>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="panel-cover--overlay cover-purple"></div>
+  </div> 
+</header>
+
+    <div class="content-wrapper">
+        <div class="content-wrapper__inner">
+            <article class="post-container post-container--single">
+
+  <header class="post-header">
+    <div class="post-meta">
+      <!-- 日期 -->
+<time datetime="2017-10-09T23:05:56.788Z" class="post-list__meta--date date">2017-10-10</time> &#8226; <span class="post-meta__tags tags"><!-- Tags -->
+
+  <a class="tag-link" href="/tags/Swift-Standard-Library/">Swift Standard Library</a>
+ </span>
+      <span class="page-pv">
+       阅读 <span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span>
+      </span> 
+   
+    </div>
+    <h1 class="post-title">AnyHashable.swift</h1>
+  </header>
+
+  <section class="post">
+    <figure class="highlight swift"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div><div class="line">92</div><div class="line">93</div><div class="line">94</div><div class="line">95</div><div class="line">96</div><div class="line">97</div><div class="line">98</div><div class="line">99</div><div class="line">100</div><div class="line">101</div><div class="line">102</div><div class="line">103</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 用 `AnyHashable` 有一个自定义表示的值。</span></div><div class="line"><span class="comment">//</span></div><div class="line"><span class="comment">// `Self` 也应该遵守 `Hashable`。</span></div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">protocol</span> <span class="title">_HasCustomAnyHashableRepresentation</span> </span>&#123;</div><div class="line">  <span class="comment">// 返回一个 `self` 作为 `AnyHashable` 的自定义表示。</span></div><div class="line">  <span class="comment">// 如果返回 nil，使用默认的表示。</span></div><div class="line">  <span class="comment">//</span></div><div class="line">  <span class="comment">// 如果你的自定义表示是一个类的实例，它需要使用采用符合 `Hashable` 的静态类型来封装为 `AnyHashable`</span></div><div class="line">  <span class="comment">//</span></div><div class="line">  <span class="comment">//	class Base: Hashable &#123;&#125;</span></div><div class="line">  <span class="comment">//	class Derived1: Base &#123;&#125;</span></div><div class="line">  <span class="comment">//	class Derived2: Base, _HasCustomHashableRepresentation &#123;</span></div><div class="line">  <span class="comment">//		func _toCustomAnyHashable() -&gt; AnyHashable? &#123;</span></div><div class="line">  <span class="comment">//			// `Derived2` 标准的 `Derived1`</span></div><div class="line">  <span class="comment">//			let customRepresentation = Derived1()</span></div><div class="line">  <span class="comment">//</span></div><div class="line">  <span class="comment">//			// Wrong:</span></div><div class="line">  <span class="comment">//			// return AnyHashable(customRepresentaion)</span></div><div class="line">  <span class="comment">//</span></div><div class="line">  <span class="comment">//			// Correct:</span></div><div class="line">  <span class="comment">//			return AnyHashable(customRepresentation as Base)</span></div><div class="line">  <span class="function"><span class="keyword">func</span> <span class="title">_toCustomAnyHashable</span><span class="params">()</span></span> -&gt; <span class="type">AnyHashable</span>?</div><div class="line">&#125;</div><div class="line"></div><div class="line">@_versioned <span class="comment">// FIXME(sil-serialize-all)</span></div><div class="line"><span class="keyword">internal</span> <span class="class"><span class="keyword">protocol</span> <span class="title">_AnyHashableBox</span> </span>&#123;</div><div class="line">  <span class="keyword">var</span> _typeID: <span class="type">ObjectIdentifier</span> &#123; <span class="keyword">get</span> &#125;</div><div class="line">  <span class="function"><span class="keyword">func</span> <span class="title">_unbox</span>&lt;T: Hashable&gt;<span class="params">()</span></span> -&gt; <span class="type">T</span>?</div><div class="line">  </div><div class="line">  <span class="comment">// 决定在箱子里的值是否相等。</span></div><div class="line">  <span class="comment">//</span></div><div class="line">  <span class="comment">// - 返回：`nil` 表示箱子存储不同的类型，所以不需要比较。否则，包含 `==` 的结果。</span></div><div class="line">  <span class="function"><span class="keyword">func</span> <span class="title">_isEqual</span><span class="params">(to: _AnyHashableBox)</span></span> -&gt; <span class="type">Bool</span>?</div><div class="line">  <span class="keyword">var</span> _hashValue: <span class="type">Int</span> &#123; <span class="keyword">get</span> &#125;</div><div class="line">  </div><div class="line">  <span class="keyword">var</span> _base: <span class="type">Any</span> &#123; <span class="keyword">get</span> &#125;</div><div class="line">  <span class="function"><span class="keyword">func</span> <span class="title">_downCastConditional</span>&lt;T&gt;<span class="params">(into result: UnsafeMutablePointer&lt;T&gt;)</span></span> -&gt; <span class="type">Bool</span></div><div class="line">&#125;</div><div class="line"></div><div class="line">@_fixed_layout <span class="comment">// FIXME(sil-serialize-all)</span></div><div class="line">@_versioned <span class="comment">// FIXME(sil-serialize-all)</span></div><div class="line"><span class="keyword">internal</span> <span class="class"><span class="keyword">struct</span> <span class="title">_ConcreteHashableBox</span>&lt;<span class="title">Base</span>: <span class="title">Hashable</span>&gt;: <span class="title">_AnyHashableBox</span> </span>&#123;</div><div class="line">  @_versioned <span class="comment">// FIXME(sil-serialize-all)</span></div><div class="line">  <span class="keyword">internal</span> <span class="keyword">var</span> _bashHashable: <span class="type">Base</span></div><div class="line">  </div><div class="line">  @_inlineable <span class="comment">// FIXME(sil-serialize-all)</span></div><div class="line">  @_versioned <span class="comment">// FIXME(sil-serialize-all)</span></div><div class="line">  <span class="keyword">internal</span> <span class="keyword">init</span>(<span class="number">_</span> base: <span class="type">Base</span>) &#123;</div><div class="line">    <span class="keyword">self</span>._base = base</div><div class="line">  &#125;</div><div class="line">  </div><div class="line">  @_inlineable <span class="comment">// FIXME(sil-serialize-all)</span></div><div class="line">  @_versioned <span class="comment">// FIXME(sil-serialize-all)</span></div><div class="line">  <span class="keyword">internal</span> <span class="keyword">var</span> _typeID: <span class="type">ObjectIdentifier</span> &#123;</div><div class="line">    <span class="keyword">return</span> <span class="type">ObjectIdentifier</span>(type(of: <span class="keyword">self</span>))</div><div class="line">  &#125;</div><div class="line">  </div><div class="line">  @_inlineable <span class="comment">// FIXME(sil-serialize-all)</span></div><div class="line">  @_versioned <span class="comment">// FIXME(sil-serialize-all)</span></div><div class="line">  <span class="keyword">internal</span> <span class="function"><span class="keyword">func</span> <span class="title">_unbox</span>&lt;T: Hashable&gt;<span class="params">()</span></span> -&gt; <span class="type">T</span>? &#123;</div><div class="line">    <span class="keyword">return</span> (<span class="keyword">self</span> <span class="keyword">as</span> _AnyHashableBox <span class="keyword">as</span>? _ConcreteHashableBox&lt;<span class="type">T</span>&gt;)?._baseHashable</div><div class="line">  &#125;</div><div class="line">  </div><div class="line">  @_inlineable <span class="comment">// FIXME(sil-serialize-all)</span></div><div class="line">  @_versioned <span class="comment">// FIXME(sil-serialize-all)</span></div><div class="line">  <span class="keyword">internal</span> <span class="function"><span class="keyword">func</span> <span class="title">_isEqual</span><span class="params">(to rhs: _AnyHashableBox)</span></span> -&gt; <span class="type">Bool</span>? &#123;</div><div class="line">    <span class="keyword">if</span> <span class="keyword">let</span> rhs: <span class="type">Base</span> = rhs._unbox() &#123;</div><div class="line">      <span class="keyword">return</span> _baseHashable == rhs</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">return</span> <span class="literal">nil</span></div><div class="line">  &#125;</div><div class="line">  </div><div class="line">  @_inlineable <span class="comment">// FIXME(sil-serialize-all)</span></div><div class="line">  @_versioned <span class="comment">// FIXME(sil-serialize-all)</span></div><div class="line">  <span class="keyword">internal</span> <span class="keyword">var</span> _hashValue: <span class="type">Int</span> &#123;</div><div class="line">    <span class="keyword">return</span> _baseHashable.hashValue</div><div class="line">  &#125;</div><div class="line">  </div><div class="line">  @_inlineable <span class="comment">// FIXME(sil-serialize-all)</span></div><div class="line">  @_versioned <span class="comment">// FIXME(sil-serialize-all)</span></div><div class="line">  <span class="keyword">internal</span> <span class="keyword">var</span> _base: <span class="type">Any</span> &#123;</div><div class="line">    <span class="keyword">return</span> _baseHashable</div><div class="line">  &#125;</div><div class="line">  </div><div class="line">  @_inlineable <span class="comment">// FIXME(sil-serialize-all)</span></div><div class="line">  @_versioned <span class="comment">// FIXME(sil-serialize-all)</span></div><div class="line">  <span class="keyword">internal</span></div><div class="line">  <span class="function"><span class="keyword">func</span> <span class="title">_downCastConditional</span>&lt;T&gt;<span class="params">(into result: UnsafeMutablePointer&lt;T&gt;)</span></span> -&gt;<span class="type">Bool</span> &#123;</div><div class="line">    <span class="keyword">guard</span> <span class="keyword">let</span> value = _baseHashable <span class="keyword">as</span>? <span class="type">T</span> <span class="keyword">else</span> &#123; <span class="keyword">return</span> <span class="literal">false</span> &#125;</div><div class="line">    result.initialize(to: value)</div><div class="line">    <span class="keyword">return</span> <span class="literal">true</span></div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line">#<span class="keyword">if</span> _runtime(_ObjC)</div><div class="line"><span class="comment">// 在被桥接到 Objective-C 后，取回自定义任何可哈希的值的表示</span></div><div class="line">@_inlineable <span class="comment">// FIXME(sil-serialize-all)</span></div><div class="line">@_versioned <span class="comment">// FIXME(sil-serialize-all)</span></div><div class="line"><span class="keyword">internal</span> <span class="function"><span class="keyword">func</span> <span class="title">_getBridgedCustomAnyHashable</span>&lt;T&gt;<span class="params">(<span class="number">_</span> value: T)</span></span> -&gt; <span class="type">AnyHashable</span>? &#123;</div><div class="line">  <span class="keyword">let</span> bridgedValue = _bridgeAnythingToObjectiveC(value)</div><div class="line">  <span class="keyword">return</span> (bridgedValue <span class="keyword">as</span>? _HasCustomAnyHashableRepresentation)?._toCustomAnyHashable()</div><div class="line">&#125;</div><div class="line">#endif</div></pre></td></tr></table></figure>
+  </section>
+
+</article>
+
+<!-- 更多阅读 -->
+<section class="read-more">
+           
+    
+               
+            <div class="read-more-item">
+                <span class="read-more-item-dim">最近的文章</span>
+                <h2 class="post-list__post-title post-title"><a href="/2017/10/15/2017-10/RCTActivityIndicatorView/" title="RCTActivityIndicatorView">RCTActivityIndicatorView</a></h2>
+                <p class="excerpt">
+                
+                12345678910111213141516171819202122// RCTActivityIndicatorView.h#import &amp;lt;UIKit/UIKit.h&amp;gt;@interface RCTActivityIndicatorView: UIActivityIndicatorV
+                &hellip;
+                </p>
+                <div class="post-list__meta"><!-- 日期 -->
+<time datetime="2017-10-15T12:27:44.753Z" class="post-list__meta--date date">2017-10-15</time> &#8226; <span class="post-list__meta--tags tags"><!-- Tags -->
+
+  <a class="tag-link" href="/tags/React-Native/">React Native</a>
+</span><a class="btn-border-small" href="/2017/10/15/2017-10/RCTActivityIndicatorView/">继续阅读</a></div>
+                           
+            </div>
+        
+        
+               
+            <div class="read-more-item">
+                <span class="read-more-item-dim">更早的文章</span>
+                <h2 class="post-list__post-title post-title"><a href="/2017/09/29/2017-09/Algorithm.swift/" title="Algorithm.swift">Algorithm.swift</a></h2>
+                <p class="excerpt">
+                
+                123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798
+                &hellip;
+                </p>
+                <div class="post-list__meta"><!-- 日期 -->
+<time datetime="2017-09-28T23:44:00.641Z" class="post-list__meta--date date">2017-09-29</time> &#8226; <span class="post-list__meta--tags tags"><!-- Tags -->
+
+  <a class="tag-link" href="/tags/Swift-Standard-Library/">Swift Standard Library</a>
+</span><a class="btn-border-small" href="/2017/09/29/2017-09/Algorithm.swift/">继续阅读</a></div>
+                       
+            </div>
+        
+     
+   
+   
+  
+</section>
+
+  <!-- 评论 -->
+
+<section class="post-comments">
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+      var disqus_shortname = 'hellowupeng'; 
+      
+  var disqus_identifier = '/2017/10/10/2017-10/AnyHashable.swift/';
+  var disqus_title = 'AnyHashable.swift';
+  var disqus_url = 'http://yoursite.com/2017/10/10/2017-10/AnyHashable.swift/';
+  
+
+      /* * * DON'T EDIT BELOW THIS LINE * * */
+      (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          //dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+          dsq.src = 'https://a.disquscdn.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  <a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
+
+            <!-- 底部 -->
+<footer class="footer">
+    <span class="footer__copyright">
+        &copy; 2017 wu peng - 本站点采用<a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享 署名-非商业性使用-相同方式共享 4.0 国际 许可协议</a>
+    </span>
+    <span class="footer__copyright">
+        由 <a href="http://hexo.io">Hexo</a> 驱动. 主题 <a href="https://github.com/monniya/hexo-theme-new-vno ">new-vno</a> 源于 <a href="http://github.com/onevcat/vno" target="_blank">onevcat</a>
+    </span>
+    
+</footer>
+
+
+        </div>
+    </div>
+
+    <!-- google analytics -->
+
+    <!-- 百度统计 -->
+
+
+
+    <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    
+    
+</body>
+</html>

@@ -1,0 +1,254 @@
+<!-- Head -->
+<!DOCTYPE html>
+<html lang="z">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    
+    <title>Algorithm.swift | hello, wupeng</title>
+    <meta name="renderer" content="webkit">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta name="description" content="iOS/Android/RN">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Algorithm.swift | hello, wupeng">
+    <meta name="twitter:description" content="iOS/Android/RN">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Algorithm.swift | hello, wupeng">
+    <meta property="og:description" content="iOS/Android/RN">
+
+    
+    <meta name="author" content="wu peng">
+    
+    <link rel="stylesheet" href="/css/vno.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+
+    
+    <link rel="icon" href="/images/avatar.jpg">
+    
+
+    <meta name="generator" content="hexo"/>
+    
+    <link rel="alternate" type="application/rss+xml" title="hello, wupeng" href="/atom.xml">
+    
+
+    <link rel="canonical" href="http://yoursite.com/2017/09/29/2017-09/Algorithm.swift/"/>
+
+                 
+</head>
+
+<body class="home-template no-js">
+    <script src="//cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
+    <script src="/js/main.js"></script>
+    <span class="mobile btn-mobile-menu">
+        <i class="fa fa-list btn-mobile-menu__icon"></i>
+        <i class="fa fa-angle-up btn-mobile-close__icon hidden"></i>
+    </span>
+
+    <!-- 左边窗口 -->
+<header class="panel-cover panel-cover--collapsed" style="background-image: url(/images/background-cover.jpg)">
+  <div class="panel-main">
+    <div class="panel-main__inner panel-inverted">
+    <div class="panel-main__content">
+
+        <a href="/" title="前往 hello, wupeng 的主页"><img src="/images/avatar.jpg" width="80" alt="hello, wupeng logo" class="panel-cover__logo logo" /></a>
+        <h1 class="panel-cover__title panel-title"><a href="/" title="link to homepage for hello, wupeng">hello, wupeng</a></h1>
+        
+        <hr class="panel-cover__divider" />
+        <p class="panel-cover__description">iOS/Android/RN</p>
+        <hr class="panel-cover__divider panel-cover__divider--secondary" />
+
+        <div class="navigation-wrapper">
+          <div>
+          <nav class="cover-navigation cover-navigation--primary">
+            <ul class="navigation">
+              <li class="navigation__item"><a href="/#blog" title="访问博客" class="blog-button">博客</a></li>
+            
+              <li class="navigation__item"><a href="/category.html">分类</a></li>
+            
+              <li class="navigation__item"><a href="/aboutme.html">关于</a></li>
+            
+            </ul>
+          </nav>
+          </div>
+          <div>
+          <!-- 左边社交 -->
+<nav class="cover-navigation navigation--social">
+  <ul class="navigation">
+
+  <!-- Weibo-->
+  
+
+  <!-- Github -->
+  
+  <li class="navigation__item">
+    <a href="https://github.com/hellowupeng" title="查看我的GitHub主页" target="_blank">
+      <i class='social fa fa-github'></i>
+      <span class="label">Github</span>
+    </a>
+  </li>
+
+
+<!-- Stack Overflow -->
+        
+
+  <!-- Google Plus -->
+  
+
+<!-- Facebook -->
+
+  
+<!-- Twitter -->
+
+  
+
+  <li class="navigation__item">
+    <a href="/atom.xml" title="RSS" target="_blank">
+      <i class='social fa fa-rss'></i>
+      <span class="label">RSS</span>
+    </a>
+  </li>
+
+
+
+  </ul>
+</nav>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="panel-cover--overlay cover-purple"></div>
+  </div> 
+</header>
+
+    <div class="content-wrapper">
+        <div class="content-wrapper__inner">
+            <article class="post-container post-container--single">
+
+  <header class="post-header">
+    <div class="post-meta">
+      <!-- 日期 -->
+<time datetime="2017-09-28T23:44:00.641Z" class="post-list__meta--date date">2017-09-29</time> &#8226; <span class="post-meta__tags tags"><!-- Tags -->
+
+  <a class="tag-link" href="/tags/Swift-Standard-Library/">Swift Standard Library</a>
+ </span>
+      <span class="page-pv">
+       阅读 <span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span>
+      </span> 
+   
+    </div>
+    <h1 class="post-title">Algorithm.swift</h1>
+  </header>
+
+  <section class="post">
+    <figure class="highlight swift"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div><div class="line">92</div><div class="line">93</div><div class="line">94</div><div class="line">95</div><div class="line">96</div><div class="line">97</div><div class="line">98</div><div class="line">99</div><div class="line">100</div><div class="line">101</div><div class="line">102</div><div class="line">103</div><div class="line">104</div><div class="line">105</div><div class="line">106</div><div class="line">107</div><div class="line">108</div><div class="line">109</div><div class="line">110</div><div class="line">111</div><div class="line">112</div><div class="line">113</div><div class="line">114</div><div class="line">115</div><div class="line">116</div><div class="line">117</div><div class="line">118</div><div class="line">119</div><div class="line">120</div><div class="line">121</div><div class="line">122</div><div class="line">123</div><div class="line">124</div><div class="line">125</div><div class="line">126</div><div class="line">127</div><div class="line">128</div><div class="line">129</div><div class="line">130</div><div class="line">131</div><div class="line">132</div><div class="line">133</div><div class="line">134</div><div class="line">135</div><div class="line">136</div><div class="line">137</div><div class="line">138</div><div class="line">139</div><div class="line">140</div><div class="line">141</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 返回两个可比较的值得较小的</span></div><div class="line"><span class="comment">//</span></div><div class="line"><span class="comment">// - 参数：</span></div><div class="line"><span class="comment">//	- x: 要比较的值</span></div><div class="line"><span class="comment">//	- y: 另一个要比较的值</span></div><div class="line"><span class="comment">// - 返回：`x` 和 `y` 中较小的一个。如果 `x` 等于 `y`，返</span></div><div class="line"><span class="comment">// 回 `x`。</span></div><div class="line"><span class="comment">//</span></div><div class="line"><span class="comment">// 注：</span></div><div class="line"><span class="comment">// </span></div><div class="line">@_inlineable</div><div class="line"><span class="keyword">public</span> <span class="function"><span class="keyword">func</span> <span class="title">min</span>&lt;T: Comparable&gt;<span class="params">(_x: T, <span class="number">_</span> y: T)</span></span> -&gt; <span class="type">T</span> &#123;</div><div class="line">  <span class="comment">// 如果 `x == y` 我们选择 `x`</span></div><div class="line">  <span class="comment">// 这维持如果 `T` 一致时所有之前存在的顺序，这对于排序</span></div><div class="line">  <span class="comment">// 算法的稳定很重要。例如: `(min(x, y), max(x, y))`</span></div><div class="line">  <span class="comment">// 在 `x == y` 时应该返回 `(x, y)`。</span></div><div class="line">   <span class="keyword">return</span> y &lt; <span class="type">X</span> ? y : x</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment">// 返回传入的最小参数。</span></div><div class="line"><span class="comment">//</span></div><div class="line"><span class="comment">// - 参数：</span></div><div class="line"><span class="comment">//	- x: 要比较的参数。</span></div><div class="line"><span class="comment">//	- y: 另一个要比较的参数。</span></div><div class="line"><span class="comment">//	- z: 要比较的第三个参数。</span></div><div class="line"><span class="comment">//	- rest: 其他额外的值。</span></div><div class="line"><span class="comment">// - 返回值：所有参数中最小的。如果有多个相等的最小参数，结果是第一个。</span></div><div class="line">@_inlineable</div><div class="line"><span class="keyword">public</span> <span class="function"><span class="keyword">func</span> <span class="title">min</span>&lt;T: Comparable&gt;<span class="params">(<span class="number">_</span> x: T, <span class="number">_</span> z: T, <span class="number">_</span> rest: T...)</span></span> -&gt; <span class="type">T</span> &#123;</div><div class="line">  <span class="keyword">var</span> minValue = <span class="built_in">min</span>(<span class="built_in">min</span>(x, y), z)</div><div class="line">  <span class="comment">// 如果 `value == minValue`，我们选择 `minValue`。查看 min(_:_:)。</span></div><div class="line">  <span class="keyword">for</span> value <span class="keyword">in</span> rest <span class="keyword">where</span> value &lt; minValue &#123;</div><div class="line">      minValue = value</div><div class="line">  &#125;</div><div class="line">  <span class="keyword">return</span> minValue</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment">// 返回两个可比较值中最大的一个。</span></div><div class="line"><span class="comment">//</span></div><div class="line"><span class="comment">// - 参数：</span></div><div class="line"><span class="comment">//	- x: 要比较的值。</span></div><div class="line"><span class="comment">//	- y: 要比较的另一个值。</span></div><div class="line"><span class="comment">// - 返回：`x` 和 `y` 中最大的。如果 `x` 等于 `y`, 返回 `y`。</span></div><div class="line">@_inlineable</div><div class="line"><span class="keyword">public</span> <span class="function"><span class="keyword">func</span> <span class="title">max</span>&lt;T: Comparable&gt;<span class="params">(<span class="number">_</span> x: T, <span class="number">_</span> y: T)</span></span> -&gt; <span class="type">T</span> &#123;</div><div class="line">  <span class="comment">// 如果 `x == y`, 我们选择 `y`。 查看 min(_:_:)。</span></div><div class="line">  <span class="keyword">return</span> y &gt;= x ? y : x</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment">// 返回传入的最大参数。</span></div><div class="line"><span class="comment">//</span></div><div class="line"><span class="comment">// - 参数：</span></div><div class="line"><span class="comment">//	- x: 要比较的值。</span></div><div class="line"><span class="comment">//	- y: 要比较的另一个值。</span></div><div class="line"><span class="comment">//	- z: 要比较的第三个值。</span></div><div class="line"><span class="comment">//	- rest: 额外的值。</span></div><div class="line"><span class="comment">// - 返回值：所有参数中最大的。如果有多个相等的最大参数。结果是最后一个。</span></div><div class="line">@_inlineable</div><div class="line"><span class="keyword">public</span> <span class="function"><span class="keyword">func</span> <span class="title">max</span>&lt;T: Comparable&gt;<span class="params">(<span class="number">_</span> x: T, <span class="number">_</span> y: T, <span class="number">_</span> z: T, <span class="number">_</span> rest: T...)</span></span> -&gt; <span class="type">T</span> &#123;</div><div class="line">  <span class="keyword">var</span> maxValue = <span class="built_in">max</span>(<span class="built_in">max</span>(x, y), z)</div><div class="line">  <span class="comment">// 如果 `value == maxValue`，我们选择 `value`。查看 min(_:_:)</span></div><div class="line">  <span class="keyword">for</span> value <span class="keyword">in</span> rest <span class="keyword">where</span> value &gt;= maxValue &#123;</div><div class="line">      maxValue = value</div><div class="line">  &#125;</div><div class="line">  <span class="keyword">return</span> maxValue</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment">// 用于 `EnumeratedSequence` 的遍历器。</span></div><div class="line"><span class="comment">//</span></div><div class="line"><span class="comment">// 包裹基类遍历器的 `EnumeratedIterator` 和产生连续的 `Int` 值，从0开始，沿着底层基类遍历器的元素的</span></div><div class="line"><span class="comment">// 实例。以下示例枚举一个数组的元素：</span></div><div class="line"><span class="comment">//</span></div><div class="line"><span class="comment">//	var iterator = ["foo", "bar"].enumerated().makeIterator()</span></div><div class="line"><span class="comment">//	iterator.next() // (0, "foo")</span></div><div class="line"><span class="comment">//	iterator.next() // (1, "bar")</span></div><div class="line"><span class="comment">//	iterator.next() // nil</span></div><div class="line"><span class="comment">//</span></div><div class="line"><span class="comment">// 要创建一个 `EnumeratedIterator` 的实例，在一个序列(sequence)或集合(collection)上</span></div><div class="line"><span class="comment">// 调用`enumerated().makeIterator()`。</span></div><div class="line">@_fixed_layout</div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">struct</span> <span class="title">EnumeratedIterator</span>&lt;<span class="title">Base</span>: <span class="title">IteratorProtocol</span>&gt;: <span class="title">IteratorProtocol</span>, <span class="title">Sequence</span> </span>&#123;</div><div class="line">  @_versioned</div><div class="line">  <span class="keyword">internal</span> <span class="keyword">var</span> _base: <span class="type">Base</span></div><div class="line">  @_versioned</div><div class="line">  <span class="keyword">internal</span> <span class="keyword">var</span> _count: <span class="type">Int</span></div><div class="line">  </div><div class="line">  <span class="comment">// 来自于 `Base` 迭代器的构造方法</span></div><div class="line">  @_inlineable</div><div class="line">  @_versioned</div><div class="line">  <span class="keyword">internal</span> <span class="keyword">init</span>(_base: <span class="type">Base</span>) &#123;</div><div class="line">	<span class="keyword">self</span>._base = _base</div><div class="line">    <span class="keyword">self</span>._count = <span class="number">0</span></div><div class="line">  &#125;</div><div class="line">  </div><div class="line">  <span class="comment">// 由 `next()` 返回的元素类型。</span></div><div class="line">  <span class="keyword">public</span> <span class="keyword">typealias</span> <span class="type">Element</span> = (offset: <span class="type">Int</span>, element: <span class="type">Base</span>.<span class="type">Element</span>)</div><div class="line">  </div><div class="line">  <span class="comment">// 达到下一个元素并返回它，或者下一个元素不存在就返回 `nil`.</span></div><div class="line">  <span class="comment">//</span></div><div class="line">  <span class="comment">// 一旦 `nil` 被返回，随后的所有调用返回 `nil`.</span></div><div class="line">  @_inlineable</div><div class="line">  <span class="keyword">public</span> <span class="keyword">mutating</span> <span class="function"><span class="keyword">func</span> <span class="title">next</span><span class="params">()</span></span> -&gt; <span class="type">Element</span>? &#123;</div><div class="line">	<span class="keyword">guard</span> <span class="keyword">let</span> b = _base.next() <span class="keyword">else</span> &#123; <span class="keyword">return</span> <span class="literal">nil</span> &#125;</div><div class="line">    <span class="keyword">let</span> result = (offset: _count, element: b)</div><div class="line">    _count += <span class="number">1</span></div><div class="line">    <span class="keyword">return</span> result</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment">// 一个序列或集合元素的枚举。</span></div><div class="line"><span class="comment">//</span></div><div class="line"><span class="comment">// `EnumeratedSequence` 是一个序列对 (*n*, *x*), *n*s 是从0开始的连续的 `Int` 值，*x*s是基类序列</span></div><div class="line"><span class="comment">// 元素。</span></div><div class="line"><span class="comment">//</span></div><div class="line"><span class="comment">// 要创建一个 `EnumeratedSequence` 的实例，在一个序列或集合上调用 `enumerated()`。以下示例</span></div><div class="line"><span class="comment">// 列举出一个数组的元素。</span></div><div class="line"><span class="comment">//</span></div><div class="line"><span class="comment">//	var s = ["foo", "bar"].enumerated()</span></div><div class="line"><span class="comment">//	for (n, x) in s &#123;</span></div><div class="line"><span class="comment">//		print("\(n): \(x)")</span></div><div class="line"><span class="comment">//	&#125;</span></div><div class="line"><span class="comment">//	// Prints "0: foo"</span></div><div class="line"><span class="comment">//	// Prints "1: bar"</span></div><div class="line">@_fixed_layout</div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">struct</span> <span class="title">EnumeratedSequence</span>&lt;<span class="title">Base</span>: <span class="title">Sequence</span>&gt;: <span class="title">Sequence</span> </span>&#123;</div><div class="line">  @_versioned</div><div class="line">  interval <span class="keyword">var</span> _base: <span class="type">Base</span></div><div class="line">  </div><div class="line">  <span class="comment">// 来自于 `Base` 序列的构造</span></div><div class="line">  @_inlineable</div><div class="line">  @_versioned</div><div class="line">  interval <span class="keyword">init</span>(_base: <span class="type">Base</span>) &#123;</div><div class="line">    <span class="keyword">self</span>._base = _base</div><div class="line">  &#125;</div><div class="line">  </div><div class="line">  <span class="comment">// 返回一个越过这个序列的元素的迭代器。</span></div><div class="line">  @_inlineable</div><div class="line">  <span class="keyword">public</span> <span class="function"><span class="keyword">func</span> <span class="title">makeIterator</span><span class="params">()</span></span> -&gt; <span class="type">EnumeratedIterator</span>&lt;<span class="type">Base</span>.<span class="type">Iterator</span>&gt; &#123;</div><div class="line">      <span class="keyword">return</span> <span class="type">EnumeratedIterator</span>(_base: _base.makeIterator())</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+  </section>
+
+</article>
+
+<!-- 更多阅读 -->
+<section class="read-more">
+           
+    
+               
+            <div class="read-more-item">
+                <span class="read-more-item-dim">最近的文章</span>
+                <h2 class="post-list__post-title post-title"><a href="/2017/10/10/2017-10/AnyHashable.swift/" title="AnyHashable.swift">AnyHashable.swift</a></h2>
+                <p class="excerpt">
+                
+                123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798
+                &hellip;
+                </p>
+                <div class="post-list__meta"><!-- 日期 -->
+<time datetime="2017-10-09T23:05:56.788Z" class="post-list__meta--date date">2017-10-10</time> &#8226; <span class="post-list__meta--tags tags"><!-- Tags -->
+
+  <a class="tag-link" href="/tags/Swift-Standard-Library/">Swift Standard Library</a>
+</span><a class="btn-border-small" href="/2017/10/10/2017-10/AnyHashable.swift/">继续阅读</a></div>
+                           
+            </div>
+        
+        
+               
+            <div class="read-more-item">
+                <span class="read-more-item-dim">更早的文章</span>
+                <h2 class="post-list__post-title post-title"><a href="/2017/09/27/2017-09/LosslessStringConvertible/" title=""></a></h2>
+                <p class="excerpt">
+                
+                LosslessStringConvertibleProtocol能用无损的，清晰的方式表示为字符串的类型。
+概览（Overview）例如，整数值1050能用它的全部被表示为“1050”。
+一个符合类型的 description 属性必须是原始值的值保护表示。同样的，他应该能从字符串表示重新创建一个
+                &hellip;
+                </p>
+                <div class="post-list__meta"><!-- 日期 -->
+<time datetime="2017-09-26T23:54:45.769Z" class="post-list__meta--date date">2017-09-27</time> &#8226; <span class="post-list__meta--tags tags"><!-- Tags -->
+</span><a class="btn-border-small" href="/2017/09/27/2017-09/LosslessStringConvertible/">继续阅读</a></div>
+                       
+            </div>
+        
+     
+   
+   
+  
+</section>
+
+  <!-- 评论 -->
+
+<section class="post-comments">
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+      var disqus_shortname = 'hellowupeng'; 
+      
+  var disqus_identifier = '/2017/09/29/2017-09/Algorithm.swift/';
+  var disqus_title = 'Algorithm.swift';
+  var disqus_url = 'http://yoursite.com/2017/09/29/2017-09/Algorithm.swift/';
+  
+
+      /* * * DON'T EDIT BELOW THIS LINE * * */
+      (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          //dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+          dsq.src = 'https://a.disquscdn.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  <a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
+
+            <!-- 底部 -->
+<footer class="footer">
+    <span class="footer__copyright">
+        &copy; 2017 wu peng - 本站点采用<a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享 署名-非商业性使用-相同方式共享 4.0 国际 许可协议</a>
+    </span>
+    <span class="footer__copyright">
+        由 <a href="http://hexo.io">Hexo</a> 驱动. 主题 <a href="https://github.com/monniya/hexo-theme-new-vno ">new-vno</a> 源于 <a href="http://github.com/onevcat/vno" target="_blank">onevcat</a>
+    </span>
+    
+</footer>
+
+
+        </div>
+    </div>
+
+    <!-- google analytics -->
+
+    <!-- 百度统计 -->
+
+
+
+    <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    
+    
+</body>
+</html>

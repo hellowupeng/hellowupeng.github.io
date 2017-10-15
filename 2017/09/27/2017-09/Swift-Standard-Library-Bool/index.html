@@ -1,0 +1,255 @@
+<!-- Head -->
+<!DOCTYPE html>
+<html lang="z">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    
+    <title>hello, wupeng</title>
+    <meta name="renderer" content="webkit">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta name="description" content="iOS/Android/RN">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="hello, wupeng">
+    <meta name="twitter:description" content="iOS/Android/RN">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="hello, wupeng">
+    <meta property="og:description" content="iOS/Android/RN">
+
+    
+    <meta name="author" content="wu peng">
+    
+    <link rel="stylesheet" href="/css/vno.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+
+    
+    <link rel="icon" href="/images/avatar.jpg">
+    
+
+    <meta name="generator" content="hexo"/>
+    
+    <link rel="alternate" type="application/rss+xml" title="hello, wupeng" href="/atom.xml">
+    
+
+    <link rel="canonical" href="http://yoursite.com/2017/09/27/2017-09/Swift-Standard-Library-Bool/"/>
+
+                 
+</head>
+
+<body class="home-template no-js">
+    <script src="//cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
+    <script src="/js/main.js"></script>
+    <span class="mobile btn-mobile-menu">
+        <i class="fa fa-list btn-mobile-menu__icon"></i>
+        <i class="fa fa-angle-up btn-mobile-close__icon hidden"></i>
+    </span>
+
+    <!-- 左边窗口 -->
+<header class="panel-cover panel-cover--collapsed" style="background-image: url(/images/background-cover.jpg)">
+  <div class="panel-main">
+    <div class="panel-main__inner panel-inverted">
+    <div class="panel-main__content">
+
+        <a href="/" title="前往 hello, wupeng 的主页"><img src="/images/avatar.jpg" width="80" alt="hello, wupeng logo" class="panel-cover__logo logo" /></a>
+        <h1 class="panel-cover__title panel-title"><a href="/" title="link to homepage for hello, wupeng">hello, wupeng</a></h1>
+        
+        <hr class="panel-cover__divider" />
+        <p class="panel-cover__description">iOS/Android/RN</p>
+        <hr class="panel-cover__divider panel-cover__divider--secondary" />
+
+        <div class="navigation-wrapper">
+          <div>
+          <nav class="cover-navigation cover-navigation--primary">
+            <ul class="navigation">
+              <li class="navigation__item"><a href="/#blog" title="访问博客" class="blog-button">博客</a></li>
+            
+              <li class="navigation__item"><a href="/category.html">分类</a></li>
+            
+              <li class="navigation__item"><a href="/aboutme.html">关于</a></li>
+            
+            </ul>
+          </nav>
+          </div>
+          <div>
+          <!-- 左边社交 -->
+<nav class="cover-navigation navigation--social">
+  <ul class="navigation">
+
+  <!-- Weibo-->
+  
+
+  <!-- Github -->
+  
+  <li class="navigation__item">
+    <a href="https://github.com/hellowupeng" title="查看我的GitHub主页" target="_blank">
+      <i class='social fa fa-github'></i>
+      <span class="label">Github</span>
+    </a>
+  </li>
+
+
+<!-- Stack Overflow -->
+        
+
+  <!-- Google Plus -->
+  
+
+<!-- Facebook -->
+
+  
+<!-- Twitter -->
+
+  
+
+  <li class="navigation__item">
+    <a href="/atom.xml" title="RSS" target="_blank">
+      <i class='social fa fa-rss'></i>
+      <span class="label">RSS</span>
+    </a>
+  </li>
+
+
+
+  </ul>
+</nav>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="panel-cover--overlay cover-purple"></div>
+  </div> 
+</header>
+
+    <div class="content-wrapper">
+        <div class="content-wrapper__inner">
+            <article class="post-container post-container--single">
+
+  <header class="post-header">
+    <div class="post-meta">
+      <!-- 日期 -->
+<time datetime="2017-09-26T22:20:40.014Z" class="post-list__meta--date date">2017-09-27</time> &#8226; <span class="post-meta__tags tags"><!-- Tags -->
+ </span>
+      <span class="page-pv">
+       阅读 <span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span>
+      </span> 
+   
+    </div>
+    <h1 class="post-title"></h1>
+  </header>
+
+  <section class="post">
+    <h3 id="布尔数据类型和支持的操作符。"><a href="#布尔数据类型和支持的操作符。" class="headerlink" title="布尔数据类型和支持的操作符。"></a>布尔数据类型和支持的操作符。</h3><p>实例是真或假的值类型</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div><div class="line">92</div><div class="line">93</div><div class="line">94</div><div class="line">95</div><div class="line">96</div><div class="line">97</div><div class="line">98</div><div class="line">99</div><div class="line">100</div><div class="line">101</div><div class="line">102</div><div class="line">103</div><div class="line">104</div><div class="line">105</div><div class="line">106</div><div class="line">107</div><div class="line">108</div><div class="line">109</div><div class="line">110</div><div class="line">111</div><div class="line">112</div><div class="line">113</div><div class="line">114</div><div class="line">115</div><div class="line">116</div><div class="line">117</div><div class="line">118</div><div class="line">119</div><div class="line">120</div><div class="line">121</div><div class="line">122</div><div class="line">123</div><div class="line">124</div><div class="line">125</div><div class="line">126</div><div class="line">127</div><div class="line">128</div><div class="line">129</div><div class="line">130</div><div class="line">131</div><div class="line">132</div><div class="line">133</div><div class="line">134</div><div class="line">135</div><div class="line">136</div><div class="line">137</div><div class="line">138</div><div class="line">139</div><div class="line">140</div><div class="line">141</div><div class="line">142</div><div class="line">143</div><div class="line">144</div><div class="line">145</div><div class="line">146</div><div class="line">147</div><div class="line">148</div><div class="line">149</div><div class="line">150</div><div class="line">151</div><div class="line">152</div><div class="line">153</div><div class="line">154</div><div class="line">155</div><div class="line">156</div><div class="line">157</div><div class="line">158</div><div class="line">159</div><div class="line">160</div><div class="line">161</div><div class="line">162</div><div class="line">163</div><div class="line">164</div><div class="line">165</div><div class="line">166</div><div class="line">167</div><div class="line">168</div><div class="line">169</div><div class="line">170</div><div class="line">171</div><div class="line">172</div><div class="line">173</div><div class="line">174</div><div class="line">175</div><div class="line">176</div><div class="line">177</div><div class="line">178</div><div class="line">179</div><div class="line">180</div><div class="line">181</div><div class="line">182</div><div class="line">183</div><div class="line">184</div><div class="line">185</div><div class="line">186</div><div class="line">187</div></pre></td><td class="code"><pre><div class="line">@_fixed_layout <span class="comment">// This attributes are compiler-internal and not intended to be used by user code.</span></div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">struct</span> <span class="title">Bool</span> </span>&#123;</div><div class="line">  @_versioned</div><div class="line">  <span class="keyword">internal</span> <span class="keyword">var</span> _value: <span class="type">Builtin</span>.<span class="type">Int1</span> <span class="comment">// 内部变量 _value</span></div><div class="line"></div><div class="line">  <span class="comment">// 创建一个实例初始化为false</span></div><div class="line">  <span class="comment">//</span></div><div class="line">  <span class="comment">// 不要直接调用这个初始化器。相反，使用布尔字面量 `false` 来创建一个新的 `Bool` 实例。</span></div><div class="line">  @_transparent</div><div class="line">  <span class="keyword">public</span> <span class="keyword">init</span>() &#123;</div><div class="line">    <span class="keyword">let</span> zero: <span class="type">Int8</span> = <span class="number">0</span></div><div class="line">    <span class="keyword">self</span>._value = <span class="type">Builtin</span>.trunc_Int8_Int1(zero._value)</div><div class="line">  &#125;</div><div class="line"></div><div class="line">  @_versioned</div><div class="line">  @_transparent</div><div class="line">  <span class="keyword">internal</span> <span class="keyword">init</span>(<span class="number">_</span> v: <span class="type">Builtin</span>.<span class="type">Int1</span>) &#123; <span class="keyword">self</span>._value = v &#125;</div><div class="line"></div><div class="line">  <span class="comment">// 创建一个等于给定布尔值的实例。</span></div><div class="line">  <span class="comment">//</span></div><div class="line">  <span class="comment">// - 参数值：要复制的布尔值。</span></div><div class="line">  <span class="keyword">public</span> <span class="keyword">init</span>(<span class="number">_</span> value: <span class="type">Bool</span>) &#123;</div><div class="line">    <span class="keyword">self</span> = value</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="class"><span class="keyword">extension</span> <span class="title">Bool</span> </span>&#123;</div><div class="line">  <span class="comment">// 这是一个编译器知道的魔法入口点。</span></div><div class="line">  @_transparent</div><div class="line">  <span class="keyword">public</span> <span class="comment">// 编译器内部的</span></div><div class="line">  <span class="function"><span class="keyword">func</span> <span class="title">_getBuiltinLogicalValue</span><span class="params">()</span></span> -&gt; <span class="type">Builtin</span>.<span class="type">Int1</span> &#123;</div><div class="line">    <span class="keyword">return</span> _value</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="class"><span class="keyword">extension</span> <span class="title">Bool</span> : <span class="title">CustomStringConvertible</span> </span>&#123;</div><div class="line">  <span class="comment">// 布尔值的文本表示。</span></div><div class="line">  <span class="keyword">public</span> <span class="keyword">var</span> description: <span class="type">String</span> &#123;</div><div class="line">    <span class="keyword">return</span> <span class="keyword">self</span> ? <span class="string">"true"</span> : <span class="string">"false"</span></div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment">// 这是一个编译器知道的魔法入口点。</span></div><div class="line">@_transparent</div><div class="line"><span class="keyword">public</span> <span class="comment">// 编译器内部的</span></div><div class="line"><span class="function"><span class="keyword">func</span> <span class="title">_getBool</span><span class="params">(<span class="number">_</span> v: Builtin.Int1)</span></span> -&gt; <span class="type">Bool</span> &#123; <span class="keyword">return</span> <span class="type">Bool</span>(v) &#125;</div><div class="line"></div><div class="line"><span class="class"><span class="keyword">extension</span> <span class="title">Bool</span>: <span class="title">Equatable</span>, <span class="title">Hashable</span> </span>&#123;</div><div class="line">  <span class="comment">// 布尔值的哈希值。</span></div><div class="line">  <span class="comment">//</span></div><div class="line">  <span class="comment">// 两个相等的值总是有相等的哈希值。</span></div><div class="line">  <span class="comment">//</span></div><div class="line">  <span class="comment">// 注意：哈希值在相同程序的不同调用之间不保证是稳定的。程序运行后不要存留哈希值。</span></div><div class="line">  @_transparent</div><div class="line">  <span class="keyword">public</span> <span class="keyword">var</span> hashValue: <span class="type">Int</span> &#123;</div><div class="line">      <span class="keyword">return</span> <span class="keyword">self</span> ? <span class="number">1</span> : <span class="number">0</span></div><div class="line">  &#125;	</div><div class="line">  </div><div class="line">  @_transparent</div><div class="line">  <span class="keyword">public</span> <span class="keyword">static</span> <span class="function"><span class="keyword">func</span> == <span class="params">(lhs: Bool, rhs: Bool)</span></span> -&gt; <span class="type">Bool</span> &#123;</div><div class="line">      <span class="keyword">return</span> <span class="type">Bool</span>(<span class="type">Builtin</span>.cmp_eq_Int1(lhs.value, rhs._value))</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="class"><span class="keyword">extension</span> <span class="title">Bool</span>: <span class="title">LosslessStringConvertible</span> </span>&#123;</div><div class="line">  <span class="comment">// 从给定的字符串创建一个新的布尔值</span></div><div class="line">  <span class="comment">//</span></div><div class="line">  <span class="comment">// 如果 `description` 值是除了 `"true"` 或 `"false"` 外的任何字符串，结果是   	// `nil`。这个初始化器是大小写敏感的。</span></div><div class="line">  <span class="comment">//</span></div><div class="line">  <span class="comment">// 参数描述：布尔值的字符串表示。</span></div><div class="line">  <span class="keyword">public</span> <span class="keyword">init</span>?(<span class="number">_</span> description: <span class="type">String</span>) &#123;</div><div class="line">    <span class="keyword">if</span> description == <span class="string">"true"</span> &#123;</div><div class="line">      <span class="keyword">self</span> = <span class="literal">true</span></div><div class="line">    &#125; <span class="keyword">else</span> <span class="keyword">if</span> description == <span class="string">"false"</span> &#123;</div><div class="line">      <span class="keyword">self</span> == <span class="literal">false</span></div><div class="line">    &#125; <span class="keyword">else</span> &#123;</div><div class="line">      <span class="keyword">return</span> <span class="literal">nil</span></div><div class="line">    &#125;</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment">// 操作符</span></div><div class="line"></div><div class="line"><span class="class"><span class="keyword">extension</span> <span class="title">Bool</span> </span>&#123;</div><div class="line">  <span class="comment">// 在一个布尔值上执行逻辑非操作</span></div><div class="line">  <span class="comment">//</span></div><div class="line">  <span class="comment">// 逻辑非(NOT)操作符(`!`)反转一个布尔值。如果值是 `true`，操作的结果是 `false`；如果值是 `false`，结果是 `true`。</span></div><div class="line">  <span class="comment">//</span></div><div class="line">  <span class="comment">// var printedMessage = false</span></div><div class="line">  <span class="comment">//</span></div><div class="line">  <span class="comment">// if !printedMessage &#123;</span></div><div class="line">  <span class="comment">// 	print("You look nice today!")</span></div><div class="line">  <span class="comment">// 	printedMessage = true</span></div><div class="line">  <span class="comment">// &#125;</span></div><div class="line">  <span class="comment">// // Prints "You look nice today!"</span></div><div class="line">  <span class="comment">//</span></div><div class="line">  <span class="comment">// 参数 a: 要否定的布尔值。</span></div><div class="line">  <span class="comment">//</span></div><div class="line">  <span class="comment">// 译注：prefix (or postfix): 当你声明操作符方法时，通过在  </span></div><div class="line">  <span class="comment">// `func` 关键字前面写 `prefix` 或 `postfix` 修饰符来实现一个</span></div><div class="line">  <span class="comment">// 前缀或后缀一元操作符。</span></div><div class="line">  @_transparent</div><div class="line">  <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">prefix</span> <span class="function"><span class="keyword">func</span> ! <span class="params">(a: Bool)</span></span> -&gt; &#123;</div><div class="line">      <span class="keyword">return</span> <span class="type">Bool</span>(<span class="type">Builtin</span>.xor_Int1(a._value, <span class="literal">true</span>._vlaue))</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="class"><span class="keyword">extension</span> <span class="title">Bool</span> </span>&#123;</div><div class="line">  <span class="comment">// 在两个布尔值上执行逻辑与(AND)操作</span></div><div class="line">  <span class="comment">//</span></div><div class="line">  <span class="comment">// 逻辑与操作符(`&amp;&amp;`)联合两个布尔值，如果两个值都是 `true`，返回</span></div><div class="line">  <span class="comment">// `true`。如果任何一个值是 `false`，操作符返回 `false`。</span></div><div class="line">  <span class="comment">//</span></div><div class="line">  <span class="comment">// 这个操作符使用短路评估：先评估左边 (`lhs`)，只是在 `lhs` 评估为</span></div><div class="line">  <span class="comment">// `true` 的时候右边 (`rhs`)才被评估。例如：</span></div><div class="line">  <span class="comment">//</span></div><div class="line">  <span class="comment">//	let measurements = [7.44, 6.51, 4.74, 5.88, 6.27,</span></div><div class="line">  <span class="comment">//	7.76]</span></div><div class="line">  <span class="comment">//	let sum = measurements.reduce(0, combine: +)</span></div><div class="line">  <span class="comment">//</span></div><div class="line">  <span class="comment">//	if measurements.count &gt; 0 &amp;&amp; sum / Double(measure</span></div><div class="line">  <span class="comment">//	-ments.count) &lt; 6.5 &#123;</span></div><div class="line">  <span class="comment">//		print("Average measurement is less than 6.5")</span></div><div class="line">  <span class="comment">//	&#125;</span></div><div class="line">  <span class="comment">//	// Prints "Average measurement is less than 6.5"</span></div><div class="line">  <span class="comment">//</span></div><div class="line">  <span class="comment">// 在这个例子里，`lhs` 测试 `measurements.count` 是否大于0</span></div><div class="line">  <span class="comment">// `&amp;&amp;` 操作符的评估是以下之一：</span></div><div class="line">  <span class="comment">// </span></div><div class="line">  <span class="comment">// - 当 `measurements.count` 等于0时，`lhs` 评估为 `false`，</span></div><div class="line">  <span class="comment">// `rhs` 不被评估，防止在表达式 `sum / Double(measure</span></div><div class="line">  <span class="comment">// -ments.count)` 里出现被0除的错误。操作的结果为 `false`。</span></div><div class="line">  <span class="comment">// - 当 `measurements.count` 大于0时，`lhs` 评估为 `true`，</span></div><div class="line">  <span class="comment">// `rhs` 被评估。评估 `rhs` 的结果是 `&amp;&amp;` 操作的结果。</span></div><div class="line">  <span class="comment">//</span></div><div class="line">  <span class="comment">// - 参数：</span></div><div class="line">  <span class="comment">//	- lhs: 操作的左边部分</span></div><div class="line">  <span class="comment">//	- rhs: 操作的右边部分</span></div><div class="line">  <span class="comment">// 译注：@autoclosure - 在表达式周围自动创建一个闭包</span></div><div class="line">  @_transparent</div><div class="line">  @inline(__always)</div><div class="line">  <span class="keyword">public</span> staic <span class="function"><span class="keyword">func</span> &amp;&amp; <span class="params">(lhs: Bool, rhs: @autoclosure <span class="params">()</span></span></span> <span class="keyword">throws</span> -&gt; <span class="type">Bool</span>) <span class="keyword">rethrows</span> -&gt; <span class="type">Bool</span> &#123;</div><div class="line">      <span class="keyword">return</span> lhs ? <span class="keyword">try</span> rhs() : <span class="literal">false</span></div><div class="line">  &#125;</div><div class="line">  </div><div class="line">  <span class="comment">// 在两个布尔值上执行逻辑或操作。</span></div><div class="line">  <span class="comment">//</span></div><div class="line">  <span class="comment">// 逻辑或操作符 `||` 联合两个布尔值，如果其中一个值是 `true`，返回 </span></div><div class="line">  <span class="comment">// `true`。如果两个值都是 `false`，操作符返回 `false`。</span></div><div class="line">  <span class="comment">//</span></div><div class="line">  <span class="comment">// 这个操作符使用短路评估：左手边 (`lhs`) 先被评估，右手边</span></div><div class="line">  <span class="comment">// (`rhs`) 只有在 `lhs` 评估为 `false` 时才会被评估。例如：</span></div><div class="line">  <span class="comment">//</span></div><div class="line">  <span class="comment">//	let majorErrors: Set = ["No first name", "</span></div><div class="line">  <span class="comment">//	name", ...]</span></div><div class="line">  <span class="comment">//	let error = ""</span></div><div class="line">  <span class="comment">//</span></div><div class="line">  <span class="comment">//	if error.isEmpty || !majorErrors.contains(error) &#123;</span></div><div class="line">  <span class="comment">//		print("No major errors detected")</span></div><div class="line">  <span class="comment">//	&#125; else &#123;</span></div><div class="line">  <span class="comment">// 		print("Major error: \(error)")</span></div><div class="line">  <span class="comment">//	&#125;</span></div><div class="line">  <span class="comment">//	// Prints "No major errors detected"</span></div><div class="line">  <span class="comment">// 在这个例子里，`lhs` 测试 `error` 是否是一个空字符串。</span></div><div class="line">  <span class="comment">// `||` 操作符的评估是以下之一：</span></div><div class="line">  <span class="comment">//</span></div><div class="line">  <span class="comment">// - 当 `error` 是一个空字符串时，`lhs` 评估为 `true`，`rhs` 不</span></div><div class="line">  <span class="comment">// 评估，跳过调用 `majorErrors.contains(_:)`。操作的结果是</span></div><div class="line">  <span class="comment">// `true`。</span></div><div class="line">  <span class="comment">//</span></div><div class="line">  <span class="comment">// - 当 `error` 不是空字符串时，`lhs` 评估为 `false`，`rhs` 被</span></div><div class="line">  <span class="comment">// 评估。评估 `rhs` 的结果是 `||` 操作的结果。</span></div><div class="line">  <span class="comment">//</span></div><div class="line">  <span class="comment">// - 参数：</span></div><div class="line">  <span class="comment">//	- lhs: 操作的左边部分。</span></div><div class="line">  <span class="comment">//	- rhs: 操作的右边部分。</span></div><div class="line">  <span class="comment">//</span></div><div class="line">  <span class="comment">// 注：</span></div><div class="line">  <span class="comment">// @_transparent: 编译器内部的</span></div><div class="line">  <span class="comment">// @inline(_always): 声明函数总是编译成 inline 的形式。</span></div><div class="line">  <span class="comment">// @inline(never): 声明函数从不编译成 inline 的形式。</span></div><div class="line">  @_transparent</div><div class="line">  @inline(_always)</div><div class="line">  <span class="keyword">public</span> <span class="keyword">static</span> <span class="function"><span class="keyword">func</span> || <span class="params">(lhs: Bool, rhs: @autoclosure <span class="params">()</span></span></span> <span class="keyword">throws</span> -&gt; <span class="type">Bool</span>) <span class="keyword">rethrows</span> -&gt; <span class="type">Bool</span> &#123;</div><div class="line">      <span class="keyword">return</span> lhs ? <span class="literal">true</span> : <span class="keyword">try</span> rhs()</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+
+  </section>
+
+</article>
+
+<!-- 更多阅读 -->
+<section class="read-more">
+           
+    
+               
+            <div class="read-more-item">
+                <span class="read-more-item-dim">最近的文章</span>
+                <h2 class="post-list__post-title post-title"><a href="/2017/09/27/2017-09/CustomStringConvertible/" title=""></a></h2>
+                <p class="excerpt">
+                
+                CustomStringConvertibleProtocol用自定义文本表示的类型。
+概览（Overview）遵循 CustomStringConvertible 协议的类型当转变实例为字符串时，能提供他们自己的表示来使用。要转换任何类型的实例到字符串，String(describing:) 初始
+                &hellip;
+                </p>
+                <div class="post-list__meta"><!-- 日期 -->
+<time datetime="2017-09-26T22:27:05.441Z" class="post-list__meta--date date">2017-09-27</time> &#8226; <span class="post-list__meta--tags tags"><!-- Tags -->
+</span><a class="btn-border-small" href="/2017/09/27/2017-09/CustomStringConvertible/">继续阅读</a></div>
+                           
+            </div>
+        
+        
+               
+            <div class="read-more-item">
+                <span class="read-more-item-dim">更早的文章</span>
+                <h2 class="post-list__post-title post-title"><a href="/2017/09/25/2017-09/Bool/" title="Bool（布尔型）">Bool（布尔型）</a></h2>
+                <p class="excerpt">
+                
+                Structure实例是真或假的值类型。
+概览（Overview）在 Swift 里 Bool 代表布尔值。通过使用布尔值真（true）或假（false）中的一个，或者通过赋值布尔方法或操作的结果到变量或常量来创建 Bool 实例。
+1234567891011var godotHasArrived 
+                &hellip;
+                </p>
+                <div class="post-list__meta"><!-- 日期 -->
+<time datetime="2017-09-24T23:59:49.127Z" class="post-list__meta--date date">2017-09-25</time> &#8226; <span class="post-list__meta--tags tags"><!-- Tags -->
+
+  <a class="tag-link" href="/tags/Numbers-and-Basic-Values/">Numbers and Basic Values</a>
+</span><a class="btn-border-small" href="/2017/09/25/2017-09/Bool/">继续阅读</a></div>
+                       
+            </div>
+        
+     
+   
+   
+  
+</section>
+
+  <!-- 评论 -->
+
+<section class="post-comments">
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+      var disqus_shortname = 'hellowupeng'; 
+      
+  var disqus_identifier = '/2017/09/27/2017-09/Swift-Standard-Library-Bool/';
+  var disqus_title = '';
+  var disqus_url = 'http://yoursite.com/2017/09/27/2017-09/Swift-Standard-Library-Bool/';
+  
+
+      /* * * DON'T EDIT BELOW THIS LINE * * */
+      (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          //dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+          dsq.src = 'https://a.disquscdn.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  <a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
+
+            <!-- 底部 -->
+<footer class="footer">
+    <span class="footer__copyright">
+        &copy; 2017 wu peng - 本站点采用<a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享 署名-非商业性使用-相同方式共享 4.0 国际 许可协议</a>
+    </span>
+    <span class="footer__copyright">
+        由 <a href="http://hexo.io">Hexo</a> 驱动. 主题 <a href="https://github.com/monniya/hexo-theme-new-vno ">new-vno</a> 源于 <a href="http://github.com/onevcat/vno" target="_blank">onevcat</a>
+    </span>
+    
+</footer>
+
+
+        </div>
+    </div>
+
+    <!-- google analytics -->
+
+    <!-- 百度统计 -->
+
+
+
+    <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    
+    
+</body>
+</html>
